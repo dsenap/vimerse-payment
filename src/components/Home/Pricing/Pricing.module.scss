@@ -1,0 +1,1119 @@
+.wrapper {
+  padding: 92px 51px 80px;
+}
+
+.cardWrapper {
+  padding-top: 52px;
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.titleWrapper {
+
+  h2,
+  p {
+    text-align: center;
+  }
+}
+
+.cardTitle1,
+.cardTitle2,
+.cardTitle3 {
+  text-transform: uppercase;
+  font-weight: 700 !important;
+}
+
+//------------------  Card 1
+.card1 {
+  max-width: 360px;
+  width: 100%; 
+  background: var(--background-default);
+
+  box-shadow: 2px 5px 20px var(--box-shadow2);
+  border-radius: 16px;
+
+  margin: 0 6px 0 0;
+
+  padding: 24px 16px 16px;
+
+  h4 {
+    text-align: center;
+  }
+}
+
+.cardTitleWrapper1 {
+  padding-bottom: 23px;
+}
+
+.pricingBack1 {
+  background: var(--background-card);
+  max-width: 250px;
+  max-height: 160px;
+  text-align: center;
+  padding: 55px 16px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.pricingBackText1 {
+  padding-top: 0px;
+  font-size: 48px;
+  line-height: 50px;
+}
+
+.ulWrapper1 {
+  padding-top: 22px;
+  padding-left: 18px;
+
+  list-style-image: url(/images/whatWeDo/svgLi.svg);
+
+  li {
+    padding: 5px 0px 5px 3px;
+    list-style-type: square;
+  }
+}
+
+.buttonWrapper1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 112px;
+
+  button {
+    width: 250px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+//---------------------------- Card 2
+
+.card2 {
+  max-width: 360px;
+  width: 100%;
+  max-height: 906px;
+  background: var(--secondary-1);
+
+  margin: 0 6px;
+
+  box-shadow: 10px 10px 20px var(--box-shadow2);
+  border-radius: 16px;
+
+  padding: 24px 16px 16px;
+
+  h4 {
+    text-align: center;
+  }
+
+  h2,
+  h3,
+  h4,
+  p {
+    color: var(--text-white);
+  }
+}
+
+.titleWrapper2 {
+  h2 {
+    text-align: center;
+    color: var(--text-white);
+  }
+}
+
+.cardTitleWrapper2 {
+  padding-bottom: 23px;
+}
+
+.pricingBack2 {
+  background: var(--background-card-2);
+  max-width: 250px;
+  max-height: 359px;
+  text-align: center;
+  padding: 32px 16px;
+  border-radius: 8px;
+
+  margin: 0 auto;
+}
+
+.pricingBackText2 {
+  padding-top: 0px;
+}
+
+.pricingBackBottomText2 {
+  color: var(--background-default);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  opacity: 0.8;
+
+  h4 {
+    text-decoration: line-through;
+  }
+}
+
+.ulWrapper2 {
+  padding-top: 21px;
+  padding-left: 16px;
+
+  list-style-image: url(/images/whatWeDo/svgLi2.svg);
+
+  li {
+    padding: 5px 0 5px 3px;
+    color: var(--li-fill1);
+  }
+}
+
+.buttonWrapper2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+
+  button {
+    width: 250px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.hrContainer3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  hr {
+    border-color: #8a929a;
+    width: 100%;
+    max-width: 450px;
+    height: 1px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: #8a929a;
+    background-color: #8a929a;
+  }
+}
+
+.textHrWrapper {
+  padding: 20px 8px;
+
+  p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+}
+
+.tooltipWrapper2 {
+  padding-left: 7px;
+}
+
+//---------------------------- Card 3
+
+.card3 {
+  max-width: 360px;
+  width: 100%;
+  max-height: 906px;
+  background: var(--background-default);
+
+  margin: 0 0 0 6px;
+
+  box-shadow: 10px 10px 20px var(--box-shadow2);
+  border-radius: 16px;
+
+  padding: 24px 16px 16px;
+
+  h4 {
+    text-align: center;
+  }
+}
+
+.titleWrapper3 {
+  h2 {
+    text-align: center;
+  }
+}
+
+.cardTitleWrapper3 {
+  padding-bottom: 23px;
+}
+
+.pricingBack3 {
+  background: var(--background-card);
+  max-width: 250px;
+  max-height: 359px;
+  text-align: center;
+  padding: 32px 16px;
+  border-radius: 8px;
+
+  margin: 0 auto;
+}
+
+.pricingBackText3 {
+  padding-top: 0px;
+}
+
+.pricingBackBottomText3 {
+  color: var(--text-light);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  opacity: 0.8;
+
+  h4 {
+    text-decoration: line-through;
+    font-size: 18px; 
+    margin-top: -8px;
+  }
+}
+
+.ulWrapper3 {
+  padding-top: 21px;
+  padding-left: 14px;
+
+  list-style-image: url(/images/whatWeDo/svgLi.svg);
+
+  li {
+    padding: 5px 0 5px 3px;
+    color: var(--li-fill2);
+  }
+}
+
+.buttonWrapper3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 55px;
+
+  button {
+    width: 250px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.hrContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  hr {
+    border-color: var(--background-default);
+    width: 100%;
+    max-width: 450px;
+    height: 1px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: var(--background-default);
+    background-color: var(--background-default);
+    opacity: 0.8;
+  }
+}
+
+.textHrWrapper3 {
+  padding: 20px 8px;
+
+  p {
+    font-size: 20px;
+    line-height: 28px;
+    color: #8a929a;
+    opacity: 0.8;
+
+    font-weight: 500;
+  }
+}
+
+.tooltipWrapper3 {
+  padding-left: 7px;
+}
+
+.tooltipWrapper2 {
+  padding-left: 4px;
+}
+
+.ulWrapper2 {
+  li:nth-of-type(4) {
+    p {
+      span {
+        padding-left: 2px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+.buttonWrapper1, .buttonWrapper2, .buttonWrapper3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  left: 0;
+}
+.card1,
+.card2,
+.card3 {  
+  position: relative;
+  padding-bottom: 100px;
+}
+}
+
+@media screen and (min-width: 1025px) {
+
+  .ulWrapper2,
+  .ulWrapper3 {
+    height: 355px;
+    max-width: 255px;
+  }
+
+  .buttonWrapper3 {
+    padding: 20px 4px 0;
+  }
+
+  .buttonWrapper2 {
+    padding: 20px 0 0;
+  }
+
+  .ulWrapper1 {
+    height: 237px;
+  }
+
+  .pricingBack2,
+  .pricingBack1,
+  .pricingBack3 {
+    padding: 32px 16px;
+    margin: 0 auto;
+    min-width: 250px;
+    max-width: 450px;
+  }
+
+  .tooltipWrapper3,
+  .tooltipWrapper2 {
+    padding-left: 7px;
+  } 
+}
+
+@media screen and (min-width: 1134px) {
+
+  .ulWrapper2,
+  .ulWrapper3 {
+    padding-left: 18px;
+    padding-top: 20px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: auto;
+  }
+
+  .buttonWrapper2 {
+    padding-top: 95px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .wrapper {
+    padding: 69px 51px 60px;
+  }
+
+  .cardWrapper {
+    padding: 50px 38px 0;
+    max-width: 1400px;
+    display: flex;
+  }
+
+  .card1 {
+    max-width: 360px;
+    position: relative;
+    padding-bottom: 100px;
+  } 
+  .card2,
+  .card3 {
+    max-width: 360px;
+    max-height: 874px;
+    position: relative;
+    padding-bottom: 100px;
+  }
+
+  .card2 {
+    margin: 0 6px;
+  }
+
+  .ulWrapper1 {
+    padding-top: 20px;
+    padding-left: 24px;
+    height: auto;
+  }
+
+  .pricingBack1 {
+    padding: 37px 16px 0;
+    margin: 0 auto;
+    min-width: 296px;
+    max-width: 450px;
+    min-height: 120px;
+  }
+
+  .pricingBack2,
+  .pricingBack3 {
+    padding: 37px 16px 0;
+    margin: 0 auto;
+    min-width: 296px;
+    max-width: 450px;
+    min-height: 120px; 
+  }
+  .pricingBack1,
+  .pricingBack3{
+    background-color: #F5F7FF;
+  }
+  .buttonWrapper1 {
+    padding-top: 115px;
+
+    button {
+      width: 320px;
+    }
+  }
+
+  .buttonWrapper2 {
+    padding: 50px 4px 0;
+
+    button {
+      width: 320px;
+    }
+  }
+
+  .buttonWrapper3 {
+    padding: 35px 4px 0;
+
+    button {
+      width: 320px;
+    }
+  }
+
+  .buttonWrapper1, .buttonWrapper2, .buttonWrapper3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+  }
+
+  .ulWrapper2,
+  .ulWrapper3 {
+    padding-left: 18px;
+    padding-top: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .ulWrapper3 {
+    padding-left: 18px;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1023px) {
+  .card1 {
+    max-width: 282px;
+    min-width: 250px;
+    width: 100%; 
+  }
+
+  .card2 {
+    max-width: 282px;
+    min-width: 250px;
+    width: 100%; 
+  }
+
+  .card3 {
+    max-width: 282px;
+    min-width: 250px;
+    width: 100%; 
+  }
+
+  .buttonWrapper3 {
+    padding-top: 40px;
+  }
+
+  .buttonWrapper2 {
+    padding-top: 40px;
+  }
+
+  .ulWrapper3,
+  .ulWrapper2 {
+    height: 350px;
+  }
+
+  .ulWrapper2 {
+    li:nth-of-type(1) {
+      max-width: 170px;
+    }
+  }
+
+  .tooltipWrapper3 {
+    padding-left: 7px;
+  }
+}
+
+@media screen and (min-width: 875px) and (max-width: 992px) {
+  .wrapper {
+    padding: 86px 8px 0;
+  }
+
+  .cardWrapper {
+    justify-content: space-between;
+  }
+
+  .card1 {
+    max-width: 300px;
+    min-width: 200px;
+    width: 100%; 
+  }
+
+  .card2 {
+    max-width: 300px;
+    min-width: 200px;
+    width: 100%; 
+  }
+
+  .card3 {
+    max-width: 300px;
+    min-width: 200px;
+    width: 100%; 
+  }
+
+  .buttonWrapper2 {
+    padding-top: 5px;
+  }
+
+  .ulWrapper2 {
+    max-width: 250px;
+    height: 390px;
+  }
+
+  .ulWrapper3 {
+    max-width: 250px;
+    height: 350px;
+  }
+
+  .buttonWrapper3 {
+    padding-top: 45px;
+  }
+
+  .titleWrapper {
+    p {
+      font-size: 34px;
+      line-height: 40px;
+    }
+  }
+
+  .ulWrapper2 {
+    li:nth-of-type(1) {
+      max-width: 170px;
+    }
+  }
+
+  .tooltipWrapper3 {
+    padding-left: 7px;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 916px) {
+  .ulWrapper2 {
+    li:nth-of-type(1) {
+      max-width: 170px;
+    }
+  }
+
+  .ulWrapper3 {
+    li:nth-of-type(2) {
+      max-width: 185px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .wrapper {
+    padding: 86px 8px 0;
+  }
+
+  .cardWrapper {
+    padding-top: 40px;
+    justify-content: space-between;
+  }
+
+  .card1 {
+    max-width: 280px;
+    min-width: 200px;
+    width: 100%; 
+  }
+
+  .pricingBack1 {
+    padding: 24px 16px 22px;
+
+    h3 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    h2 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
+  .ulWrapper1 {
+    padding-top: 0px;
+    margin-left: -5px;
+    height: 238px;
+
+    li {
+      padding-left: 5px;
+    }
+  }
+
+  .buttonWrapper1 {
+    padding-top: 34px;
+  }
+
+  .card2,
+  .card3 {
+    max-width: 280px;
+    min-width: 200px;
+    width: 100%; 
+  }
+
+  .pricingBack2,
+  .pricingBack3 {
+    padding: 25px 16px 22px;
+
+    h3 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    h2 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
+  .ulWrapper2,
+  .ulWrapper3 {
+    padding-top: 0px;
+    max-width: 200px;
+    margin-left: -3px;
+
+    li {
+      padding-left: 5px;
+    }
+  }
+
+  .ulWrapper2 {
+    padding-left: 15px;
+  }
+
+  .ulWrapper2 {
+    li:nth-of-type(4) {
+      max-width: 170px;
+    }
+  }
+
+  .ulWrapper3 {
+    padding-top: 0px;
+    max-width: 200px;
+    margin-left: -3px;
+    padding-left: 15px;
+
+    li {
+      padding-left: 5px;
+    }
+  }
+
+  .titleWrapper {
+    p {
+      font-size: 34px;
+      line-height: 40px;
+    }
+  }
+
+  .buttonWrapper2 {
+    padding-top: 30px;
+  }
+
+  .buttonWrapper3 {
+    padding-top: 73px;
+  }
+
+  .textHrWrapper {
+    padding: 7px 9px 7px;
+  }
+
+  .textHrWrapper3 {
+    padding: 7px 9px 7px;
+  }
+
+  .tooltipWrapper3 {
+    padding-left: 7px;
+  }
+
+  .tooltipWrapper2 {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 875px) {
+  .card3 {
+    position: relative;
+  }
+
+  .buttonWrapper3 {
+    position: absolute;
+    bottom: 16px;
+
+    button {
+      max-width: 201px;
+    }
+  }
+
+  .tooltipWrapper3 {
+    padding-left: 7px;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 875px) {
+  .buttonWrapper3 {
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 230px;
+    min-width: 200px;
+
+    button {
+      max-width: 230px;
+      width: 100%;
+      min-width: 200px;
+    }
+  }
+}
+
+@media screen and (min-width: 825px) and (max-width: 850px) {
+  .buttonWrapper3 {
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 215px;
+    min-width: 200px;
+
+    button {
+      max-width: 220px;
+      width: 100%;
+      min-width: 200px;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 824px) {
+  .buttonWrapper3 {
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 213px;
+    min-width: 200px;
+
+    button {
+      max-width: 213px;
+      width: 100%;
+      min-width: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    padding: 70px 0 0px;
+  }
+
+  .cardWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 40px;
+  }
+
+  .card1 {
+    max-width: 500px;
+    width: 100%;
+    max-height: 501px;
+    margin-right: 0;
+  }
+
+  .pricingBack1 {
+    padding: 32px 42px;
+    margin: 0 auto;
+    max-width: 450px;
+
+    h3 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    h2 {
+      font-size: 48px;
+      line-height: 50px;
+    }
+  }
+
+  .ulWrapper1 {
+    padding-top: 25px;
+    padding-left: 16px;
+  }
+
+  .buttonWrapper1 {
+    padding-top: 20px;
+
+    button {
+      width: 296px;
+    }
+  }
+
+  .card2 {
+    max-width: 500px;
+    width: 100%;
+    max-height: 950px;
+    margin-top: 30px;
+  }
+
+  .card3 {
+    max-width: 500px;
+    width: 100%;
+    max-height: 950px;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .pricingBack2,
+  .pricingBack3 {
+    padding: 32px 16px;
+    margin: 0 auto;
+    min-width: 296px;
+    max-width: 450px;
+
+    h3 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    h2 {
+      font-size: 48px;
+      line-height: 50px;
+    }
+  }
+
+  .ulWrapper2,
+  .ulWrapper3 {
+    padding-top: 22px;
+    max-width: 450px;
+    padding-left: 17px;
+
+    li {
+      padding-left: 2px;
+    }
+  }
+
+  .ulWrapper3 {
+    padding-left: 18px;
+
+    li {
+      padding-left: 0px;
+    }
+  }
+
+  .buttonWrapper2 {
+    padding-top: 20px;
+
+    button {
+      width: 296px;
+    }
+  }
+
+  .buttonWrapper3 {
+    padding-top: 20px;
+
+    button {
+      width: 296px;
+    }
+  }
+
+  .textHrWrapper {
+    padding: 20px 10px;
+
+    p {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  .tooltipWrapper3,
+  .tooltipWrapper2 {
+    padding-left: 7px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper {
+    padding: 70px 0 0px;
+  }
+
+  .cardWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 40px;
+  }
+
+  .card1 {
+    max-width: 500px;
+    width: 100%;
+    max-height: 575px;
+    margin-right: 0;
+  }
+
+  .pricingBack1 {
+    padding: 32px 42px;
+    margin: 0 auto;
+    max-width: 450px;
+
+    h3 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    h2 {
+      font-size: 48px;
+      line-height: 50px;
+    }
+  }
+
+  .ulWrapper1 {
+    padding-top: 25px;
+  }
+
+  .buttonWrapper1 {
+    padding-top: 20px;
+
+    button {
+      width: 296px;
+    }
+  }
+
+  .card2 {
+    max-width: 500px;
+    width: 100%;
+    max-height: 900px;
+    margin-top: 30px;
+  }
+
+  .card3 {
+    max-width: 500px;
+    width: 100%;
+    max-height: 870px;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .pricingBack2,
+  .pricingBack3 {
+    padding: 32px 16px;
+    margin: 0 auto;
+    min-width: 250px;
+    max-width: 450px;
+
+    h3 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    h2 {
+      font-size: 48px;
+      line-height: 50px;
+    }
+  }
+
+  .ulWrapper2,
+  .ulWrapper3 {
+    padding-top: 22px;
+    max-width: 450px;
+  }
+
+  .ulWrapper3 {
+    padding-left: 16px;
+    padding-top: 20px;
+
+    li {
+      padding-left: 3px;
+    }
+  }
+
+  .ulWrapper2 {
+    padding-left: 15px;
+
+    li {
+      padding-left: 3px;
+    }
+  }
+
+  .buttonWrapper2 {
+    padding-top: 20px;
+
+    button {
+      width: 296px;
+    }
+  }
+
+  .buttonWrapper3 {
+    padding-top: 20px;
+
+    button {
+      width: 296px;
+    }
+  }
+
+  .textHrWrapper {
+    padding: 20px 10px;
+
+    p {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  .tooltipWrapper3,
+  .tooltipWrapper2 {
+    padding-left: 3px;
+  }
+
+  .tooltipWrapper3 {
+    padding-left: 7px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ulWrapper3 {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .card1 {
+    max-height: 600px;
+  }
+
+  .card2 {
+    max-height: 950px;
+  }
+
+  .card3 {
+    max-height: 950px;
+  }
+}

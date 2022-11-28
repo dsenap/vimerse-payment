@@ -1,0 +1,278 @@
+.wrapper {
+  padding: 102px 49px;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.titleWrapper {
+  p {
+    text-align: center;
+  }
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: top;
+
+  background: var(--background-default);
+  box-shadow: 2px 5px 20px var(--box-shadow2);
+  border-radius: 16px;
+
+  padding: 0 18px 50px;
+
+  margin-top: 50px;
+  margin-right: 6px;
+  margin-left: 6px;
+  max-width: 286px;
+  text-align: center;
+}
+
+.cardTitle {
+  padding-top: 0px;
+
+  max-width: 242px;
+}
+
+.cardTitleWrapper {
+  margin-top: -10px;
+}
+
+.cardText,
+.cardText2,
+.cardTex3 {
+  padding-top: 20px;
+  max-width: 242px;
+}
+
+.cardImage {
+  margin-top: -50px;
+
+  svg {
+    height: 116px;
+  }
+}
+
+.cardImage1 {
+  margin-top: -57px;
+  padding-bottom: 8px;
+
+  svg {
+    height: 116px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .wrapper {
+    padding: 120px 14px;
+  }
+
+  .cardWrapper {
+    padding: 50px 32px 0;
+  }
+  .cardImage {
+    display: block;
+  }
+
+  .cardImage1 {
+    display: block;
+  }
+  .card {
+    padding: 0 40px 82px;
+
+    max-width: 360px;
+  }
+  .cardTitle {
+    padding-top: 2px;
+    max-width: 340px;
+  }
+
+  .cardText,
+  .cardText2,
+  .cardTex3 {
+    padding-top: 20px;
+    max-width: 340px;
+  }
+
+  .cardText2,
+  .cardTex3 {
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width: 1117px) {
+  .cardText2,
+  .cardTex3 {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .wrapper {
+    padding: 100px 0 0;
+  }
+
+  .cardWrapper {
+    padding-top: 36px;
+  }
+
+  .cardImage {
+    display: block;
+    margin-top: -45px;
+
+    svg {
+      max-width: 210px;
+      max-height: 167px;
+    }
+  }
+
+  .cardImage1 {
+    display: block;
+    margin-top: -50px;
+    padding-bottom: 0;
+
+    svg {
+      max-width: 210px;
+      max-height: 167px;
+    }
+  }
+
+  .card {
+    padding: 0 20px 50px;
+
+    max-width: 350px;
+  }
+
+  .cardTitle {
+    padding-top: 4px;
+    max-width: 350px;
+  }
+
+  .cardText,
+  .cardText2,
+  .cardTex3 {
+    padding-top: 20px;
+    max-width: 350px;
+  }
+
+  .titleWrapper {
+    p {
+      font-size: 34px;
+      line-height: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 904px) {
+  .cardText2,
+  .cardTex3 {
+    padding-top: 40px;
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    padding: 105px 0 0;
+  }
+
+  .cardWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 40px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 24px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+
+    max-width: 500px;
+  }
+
+  .cardTitle {
+    padding-top: 4px;
+    max-width: 500px;
+  }
+
+  .cardText,
+  .cardText2,
+  .cardTex3 {
+    padding-top: 20px;
+    max-width: 500px;
+  }
+
+  .cardImage {
+    display: flex;
+    justify-content: center;
+
+    margin-top: -80px;
+  }
+
+  .cardImage1 {
+    display: flex;
+    justify-content: center;
+
+    margin-top: -80px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+
+    margin: 30px 0 36px;
+    padding: 24px 21px 54px;
+
+    max-width: 328px;
+    height: 265px;
+  }
+
+  .cardWrapper {
+    padding-top: 60px;
+  }
+
+  .cardTitle {
+    padding-top: 4px;
+    max-width: 288px;
+  }
+
+  .cardText,
+  .cardText2,
+  .cardTex3 {
+    padding-top: 20px;
+    max-width: 328px;
+  }
+
+  .cardImage {
+    display: flex;
+    justify-content: center;
+
+    margin-top: -70px;
+  }
+
+  .cardImage1 {
+    display: flex;
+    justify-content: center;
+
+    margin-top: -80px;
+    padding-bottom: 5px;
+  }
+}

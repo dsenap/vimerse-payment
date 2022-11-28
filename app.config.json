@@ -1,0 +1,10 @@
+{
+  apps : [
+    {
+      name      : "next",
+      script    : "npx",
+      interpreter: "none",
+      args: "serve -p 8000"
+    }
+  ]
+}

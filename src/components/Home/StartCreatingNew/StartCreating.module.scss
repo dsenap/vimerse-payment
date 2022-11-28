@@ -1,0 +1,122 @@
+.contanier {
+  width: 100vw;
+  height: 256px;
+  background: #176EA5;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 150px 0;
+  @media (max-width:767px) {
+    margin: 70px 0 40px;
+  }
+}
+
+.portfolioBannerImage {
+  position: absolute;
+  left: -35%;
+  height: 256px;
+  width: 100%;
+}
+
+
+
+.bannerText {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* or 140% */
+
+  text-align: center;
+
+  color: #F5F7FF;
+  text-align: center;
+}
+
+.bannertextDiv {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+.getStartedBtnText {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #F6F7F9;
+}
+
+.getStartedBtnArrow {
+  color: white;
+  margin-left: 10px !important;
+  font-size: 15px !important;
+}
+
+.getStartedTextFld {
+  background-color: white;
+  box-shadow: '2px 5px 5px rgba(0, 0, 0, 0.05)';
+  border-radius: 4px;
+
+  height: 48px;
+  padding-left: 20px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #8A929A;
+
+
+  outline: none;
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+
+  width: 370px !important;
+
+  @media (max-width: 768px) {
+    width: 300px !important;
+  }
+
+  @media (max-width: 450px) {
+    width: 250px !important;
+  }
+}
+
+button.getStartedBtn {
+  position: relative; 
+  height: 48px !important;
+  left: -3px !important;
+  top: -2px !important;
+  background: '#FE7A39';
+  box-shadow: '2px 5px 5px rgba(0, 0, 0, 0.05)';
+  border-radius: 0 4px 4px 0 !important;
+  border-color: '#FE7A39';
+  border-left-width: 0; 
+  width: 161px !important;
+
+  @media (max-width: 768px) { 
+    width: 130px !important;
+    font-size: 13px !important;
+    padding: 8px 0 8px 8px !important;
+  }
+}

@@ -1,0 +1,183 @@
+.wrapper {
+  padding: 87px 51px;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.titleWrapper {
+  p {
+    text-align: center;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--secondary-1);
+
+  box-shadow: 2px 5px 20px var(--box-shadow2);
+  border-radius: 16px;
+
+  margin: 52px 2px 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 48px 12px 53px;
+
+  max-width: 305px;
+
+  &:first-child {
+    padding-left: 32px;
+  }
+
+  &:last-child {
+    padding-right: 32px;
+  }
+
+  h4,
+  p {
+    color: var(--text-white);
+  }
+}
+
+.contentTitle {
+  padding-top: 16px;
+}
+
+.contentText {
+  padding-top: 10px;
+  text-align: center;
+  max-width: 105px;
+}
+
+.contentTextCenter {
+  padding-top: 10px;
+  text-align: center;
+  max-width: 160px;
+}
+
+@media screen and (min-width: 1025px) {
+  .content {
+    &:first-child {
+      margin-left: auto;
+    }
+
+    &:last-child {
+      margin-right: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .wrapper {
+    padding: 26px 0px 70px;
+  }
+
+  .container {
+    margin: 50px 36px 0;
+  }
+
+  .content {
+    &:first-child {
+      padding-left: 170px;
+      margin-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 170px;
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .wrapper {
+    padding: 65px 8px 0;
+  }
+
+  .container {
+    margin-top: 42px;
+  }
+
+  .content {
+    max-width: 236px;
+    padding: 20px 12px 57px;
+    margin: 0 auto;
+
+    &:first-child {
+      margin-left: auto;
+    }
+
+    &:last-child {
+      margin-right: auto;
+    }
+  }
+
+  .contentImage {
+    display: block;
+  }
+
+  .contentTitle {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  .titleWrapper {
+    p {
+      font-size: 34px;
+      line-height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    padding: 50px 0 0;
+    margin: 0 auto;
+    max-width: 548px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 42px auto 0;
+  }
+
+  .contentText {
+    max-width: 220px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .content {
+    max-width: 296px;
+    padding: 4px 16px;
+
+    &:first-child {
+      padding-left: 16px;
+      padding-top: 25px;
+    }
+
+    &:last-child {
+      padding-right: 16px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .contentTitle {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+}

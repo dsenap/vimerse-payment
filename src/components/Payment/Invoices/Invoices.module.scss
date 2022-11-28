@@ -1,0 +1,228 @@
+.invoices {
+    background: #FFFFFF;
+    border: 1px solid rgba(155, 176, 190, 0.2);
+    border-radius: 0px 4px 4px 4px;
+}
+
+.invoices__type {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(155, 176, 190, 0.2);
+}
+
+.invoices__typeItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #647180;
+
+    padding: 21px 43px;
+
+    &:last-child {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.invoices__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.invoices__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 50px;
+    border-bottom: 1px solid rgba(155, 176, 190, 0.2);
+}
+
+.invoise__itemSelect {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: 1px solid #185E8A;
+    border-radius: 2px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.invoise__itemSelectOrange {
+    width: 18px;
+    height: 18px;
+    background: #FE8539;
+    border-radius: 2px;
+}
+
+.invoise__itemDate {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+
+    color: #434F56;
+}
+
+.invoise__itemNumber {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #434F56;
+}
+
+.invoise__itemName {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+
+    color: #434F56;
+}
+
+.invoise__itemStatus {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #04A9F4;
+}
+
+.invoise__itemTotal {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+
+    color: #434F56;
+}
+
+.invoise__itemBalance {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+
+    color: #434F56;
+}
+
+.invouse__itemView {
+    border: none;
+    background: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #FE8539;
+    cursor: pointer;
+}
+
+.invoices__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 25px 0;
+}
+
+.invoices__navigationPrev {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(155, 176, 190, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.invoices__navigationNext {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(155, 176, 190, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.invoices__navigationList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.invoices__navigationItem {
+    width: 25px;
+    height: 25px;
+}
+
+.invoices__navigationItemButton {
+    width: 25px;
+    height: 25px;
+    background: rgba(254, 133, 57, 0.2);
+    border: 1px solid #FE8539;
+    border-radius: 50%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #FE8539;
+    cursor: pointer;
+}

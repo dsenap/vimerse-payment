@@ -1,0 +1,44 @@
+.tooltip {
+  color: #fff;
+  padding-left: 16px;
+}
+
+.tooltipWrapper {
+  width: 100%;
+}
+
+.iconClose2 {
+  cursor: pointer;
+  padding-left: 0;
+
+  &:hover {
+    path {
+      fill: #fff !important;
+    }
+  }
+}
+
+.iconClose {
+  cursor: pointer;
+  padding-left: 0;
+
+  &:hover {
+    path {
+      fill: var(--secondary-1) !important;
+    }
+  }
+}
+
+.tooltipDesktop {
+  color: #fff;
+  padding-left: 16px;
+  padding-right: 10px;
+
+  p {
+    color: #fff;
+  }
+}
+
+.wrapperText {
+  padding-right: 8px;
+}

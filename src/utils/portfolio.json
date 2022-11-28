@@ -1,0 +1,122 @@
+{
+    "categories": [
+        {
+            "key": 0,
+            "title": "All"
+        },
+        {
+            "key": 1,
+            "title": "Twitch stream highlights"
+        },
+        {
+            "key": 2,
+            "title": "Fashion & Beauty"
+        },
+        {
+            "key": 3,
+            "title": "Cooking"
+        },
+        {
+            "key": 4,
+            "title": "Vlog"
+        },
+        {
+            "key": 5,
+            "title": "Product Review"
+        },
+        {
+            "key": 6,
+            "title": "Fitness"
+        },
+        {
+            "key": 7,
+            "title": "Gaming"
+        },
+        {
+            "key": 8,
+            "title": "Explainer"
+        },
+        {
+            "key": 9,
+            "title": "Sports"
+        },
+        {
+            "key": 10,
+            "title": "Meditations"
+        }
+    ],
+    "videos": [
+        {
+            "category": 1,
+            "title": "Twitch stream highlights",
+            "url": "https://youtube.com/embed/acmA5jEVm9Y",
+            "id": "acmA5jEVm9Y"
+        },
+        {
+            "category": 7,
+            "title": "Gaming",
+            "url": "https://youtube.com/embed/dOLon0EwzFY",
+            "id": "dOLon0EwzFY"
+        },
+        {
+            "category": 8,
+            "title": "Explainer",
+            "url": "https://www.youtube.com/embed/9vVs7ITl5Is",
+            "id": "9vVs7ITl5Is"
+        },
+        {
+            "category": 2,
+            "title": " Fashion and Beauty",
+            "url": "https://www.youtube.com/embed/Gj9XYSNPA60",
+            "id": "Gj9XYSNPA60"
+        },
+        {
+            "category": 3,
+            "title": "Cooking",
+            "url": "https://www.youtube.com/embed/j2CStGIHkmQ",
+            "id": "j2CStGIHkmQ"
+        },
+        {
+            "category": 4,
+            "title": "Vlog",
+            "url": "https://www.youtube.com/embed/WWNtjeYIkXw",
+            "id": "WWNtjeYIkXw"
+        },
+        {
+            "category": 5,
+            "title": "Product Review",
+            "url": "https://www.youtube.com/embed/DgiaLtOFOV4",
+            "id": "DgiaLtOFOV4"
+        },
+        {
+            "category": 6,
+            "title": "Fitness",
+            "url": "https://www.youtube.com/embed/Ugqn3wW_iB8",
+            "id": "Ugqn3wW_iB8"
+        },
+        {
+            "category": 8,
+            "title": "Explainer",
+            "url": "https://www.youtube.com/embed/hkA6Y9ZzwWo",
+            "id": "hkA6Y9ZzwWo"
+        },
+        {
+            "category": 9,
+            "title": "Sports",
+            "url": "https://www.youtube.com/embed/10kZfBiKXs4",
+            "id": "10kZfBiKXs4"
+        },
+        {
+            "category": 1,
+            "title": "Twitch stream highlights",
+            "url": "https://www.youtube.com/embed/0VlH_ekTyak",
+            "id": "0VlH_ekTyak"
+        },
+        {
+            "category": 10,
+            "title": "Meditations",
+            "url": "https://www.youtube.com/embed/YKi2BO9jO7Y",
+            "id": "YKi2BO9jO7Y"
+        }
+    ]
+}

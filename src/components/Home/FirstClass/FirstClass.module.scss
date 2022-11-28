@@ -1,0 +1,318 @@
+.wrapper {
+  padding: 44px 53px 26px;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.titleWrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cardWrapper {
+  padding-top: 52px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardItem,
+.cardItem3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 65px;
+}
+
+.cardItem {
+  padding-bottom: 75px;
+}
+
+.cardItemReverse,
+.cardItemReverse4 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-bottom: 61px;
+}
+
+.cardItemReverse4 {
+  padding-bottom: 65px;
+}
+
+.cardTextPart {
+  max-width: 420px;
+}
+
+.cardText {
+  padding-top: 20px;
+}
+
+.cardImage,
+.cardImage3,
+.cardImage4,
+.cardImage5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImage {
+  margin-top: -10px;
+}
+
+.cardImage4 {
+  margin-top: -5px;
+}
+
+.cardImage1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1100px) {
+  .wrapper {
+    padding: 80px 20px 20px;
+  }
+
+  .cardWrapper {
+    padding: 121px 36px 0;
+  }
+
+  .cardTextPart {
+    max-width: 555px;
+  }
+
+  .cardImage,
+  .cardImage3,
+  .cardImage4,
+  .cardImage5 {
+    margin-top: -65px;
+    svg {
+      width: 420px;
+      height: 420px;
+    }
+  }
+
+  .cardImage1 {
+    margin-top: -65px;
+    svg {
+      width: 420px;
+      height: 420px;
+    }
+  }
+  .cardItemReverse,
+  .cardItemReverse4 {
+    padding-bottom: 68px;
+  }
+
+  .cardItem,
+  .cardItem3 {
+    padding-bottom: 74px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .wrapper {
+    padding: 63px 8px 0px;
+  }
+
+  .titleWrapper {
+    max-width: 350px;
+    h2 {
+      font-size: 34px;
+      line-height: 40px;
+    }
+  }
+
+  .cardTitle {
+    max-width: 240px;
+  }
+
+  .cardTitleReverse {
+    max-width: 350px;
+  }
+
+  .cardTitle3 {
+    max-width: 350px;
+  }
+  .cardTitle4 {
+    max-width: 220px;
+  }
+  .cardTitle5 {
+    max-width: 220px;
+  }
+
+  .cardTextPart {
+    max-width: 542px;
+  }
+
+  .cardItem,
+  .cardItemReverse,
+  .cardItemReverse4,
+  .cardItem3 {
+    justify-content: space-between;
+  }
+
+  .cardImage,
+  .cardImage3,
+  .cardImage4,
+  .cardImage5 {
+    svg {
+      width: 335px;
+      height: 335px;
+    }
+  }
+
+  .cardImage1 {
+    svg {
+      width: 335px;
+      height: 335px;
+    }
+  }
+
+  .cardText {
+    padding-top: 10px;
+  }
+
+  .cardItem .cardText {
+    padding-right: 30px;
+  }
+
+  .cardItem3 .cardText {
+    padding-right: 30px;
+  }
+
+  .cardItemReverse .cardText {
+    padding-left: 28px;
+  }
+
+  .cardItemReverse4 .cardText {
+    padding-left: 28px;
+  }
+
+  .cardItemReverse4 .cardTitleReverse,
+  .cardTitle4 {
+    padding-left: 28px;
+    margin-right: 0;
+  }
+
+  .cardItemReverse .cardTitleReverse,
+  .cardTitle4 {
+    padding-left: 28px;
+    margin-right: 0;
+  }
+
+  .cardTitle4 {
+    max-width: 250px;
+  }
+
+  .cardItem,
+  .cardItemReverse,
+  .cardItem3,
+  .cardItemReverse4 {
+    padding-bottom: 54px;
+  }
+
+  .cardWrapper {
+    padding-top: 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cardItem,
+  .cardItemReverse,
+  .cardItem3,
+  .cardItemReverse4 {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    padding: 102px 0px 0;
+  }
+
+  .cardImage {
+    margin-top: 0;
+  }
+
+  .cardImage4 {
+    margin-top: 0;
+  }
+
+  .cardItem,
+  .cardItemReverse,
+  .cardItem3,
+  .cardItemReverse4 {
+    flex-direction: column-reverse;
+    padding-bottom: 32px;
+  }
+
+  .cardImage {
+    svg {
+      width: 275px;
+      height: 210px;
+    }
+  }
+  .cardImage3 {
+    margin-top: -10px;
+    svg {
+      width: 285px;
+      height: 220px;
+    }
+  }
+  .cardImage4 {
+    margin-top: 0px;
+    padding-left: 12px;
+    svg {
+      width: 280px;
+      height: 215px;
+    }
+  }
+  .cardImage5 {
+    margin-top: -5px;
+    padding-bottom: 5px;
+    svg {
+      width: 275px;
+      height: 210px;
+    }
+  }
+
+  .cardImage1 {
+    padding-right: 16px;
+    svg {
+      width: 275px;
+      height: 235px;
+    }
+  }
+
+  .cardWrapper {
+    padding-top: 32px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .cardTextPart {
+    padding-top: 0px;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  .cardText {
+    padding-top: 20px;
+  }
+
+  .cardTitle {
+    max-width: 300px;
+  }
+
+  .cardTitle4 {
+    max-width: 220px;
+  }
+  .cardTitle5 {
+    max-width: 230px;
+  }
+}

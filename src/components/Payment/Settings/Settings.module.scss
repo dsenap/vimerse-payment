@@ -1,0 +1,492 @@
+.settings {
+    background: #FFFFFF;
+    border: 1px solid rgba(155, 176, 190, 0.2);
+    border-radius: 0px 4px 4px 4px;
+
+}
+
+.settings__manage {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(35, 31, 32, 0.2);
+    padding: 32px 70px;
+}
+
+.settings__manageTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #434F56;
+    margin-bottom: 15px;
+}
+
+.settings__manageDesc {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #434F56;
+}
+
+.settings__manageNew {
+    background: none;
+    border: 2px solid #176EA5;
+    border-radius: 27.5px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #176EA5;
+    padding: 13px 20px;
+    cursor: pointer;
+}
+
+.settings__billing {
+    border-bottom: 1px solid rgba(35, 31, 32, 0.2);
+    padding: 32px 70px;
+}
+
+.settings__billingTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #231F20;
+    margin-bottom: 24px;
+
+}
+
+.settings__billingForm {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 43px;
+}
+
+.settings__billingFormLabel {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: rgba(35, 31, 32, 0.45);
+    cursor: pointer;
+}
+
+.settings__billingFormInput {
+    padding: 0;
+    margin: 0;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-2.5px, calc(-50%));
+        width: 19px;
+        height: 19px;
+        outline: 2px solid #FE7A39;
+        border-radius: 50%;
+
+    }
+
+    &:checked {
+        width: 14px;
+        height: 14px;
+        background: #FE7A39;
+        border-radius: 50%;
+
+    }
+}
+
+.settings__billingFormSelect {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 17px;
+    cursor: pointer;
+    background: #FFFFFF;
+    border: 1px solid rgba(155, 176, 190, 0.5);
+
+
+}
+
+.settings__billingFormSelectTitle {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgba(35, 31, 32, 0.45);
+}
+
+.settings__billingFormSelectImg {
+    transform: rotate(-90deg);
+}
+
+.settings__billingFormSelectBlock {
+
+    position: absolute;
+    left: -1px;
+    top: 100%;
+    width: calc(100% + 2px);
+    max-height: 400px;
+    overflow-y: scroll;
+    background: #FFFFFF;
+    border: 1px solid rgba(155, 176, 190, 0.5);
+    border-radius: 4px;
+    border-top: none;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.settings__billingFormSelectList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.settings__billingFormSelectItem {
+    padding: 0;
+    border-bottom: 1px solid rgba(155, 176, 190, 0.5);
+    padding: 12px 17px;
+
+    &:last-child {
+        border: none;
+    }
+}
+
+.settings__autoplay {
+    border-bottom: 1px solid rgba(35, 31, 32, 0.2);
+    padding: 32px 70px;
+}
+
+.settings__autoplayBlock {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.settings__autoplayTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #231F20;
+}
+
+.settings__autoplayButton {
+    padding: 0 3px;
+    margin: 0;
+    appearance: none;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba(35, 31, 32, 0.46);
+    border-radius: 100px;
+    width: 56px;
+    height: 27px;
+    cursor: pointer;
+}
+
+.settings__autoplayButtonActive {
+    padding: 0 3px;
+    margin: 0;
+    appearance: none;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #FE7A39;
+    border-radius: 100px;
+    width: 56px;
+    height: 27px;
+    cursor: pointer;
+}
+
+.settings__autoplaySwitch {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: #FFFFFF;
+}
+
+.settings__autoplayDesc {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: rgba(35, 31, 32, 0.46);
+    max-width: 716px;
+}
+
+.settings__primary {
+    border-bottom: 1px solid rgba(35, 31, 32, 0.2);
+    padding: 32px 70px;
+}
+
+.settings__primaryTitle {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #231F20;
+    margin-bottom: 11px;
+}
+
+.settings__primaryDesc {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: rgba(35, 31, 32, 0.46);
+    margin-bottom: 24px;
+}
+
+.settings__primaryCard {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.settings__primaryCardImg {
+    width: 40px;
+    height: 40px;
+
+}
+
+.settings__primaryCardNumber {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #9A9899;
+    margin-right: 48px;
+    margin-left: 20px;
+}
+
+.settings__primaryCardEdit {
+    border: none;
+    background: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #176EA5;
+    cursor: pointer;
+}
+
+.settings__primaryCardDesc {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    color: rgba(35, 31, 32, 0.46);
+}
+
+.settings__additional {
+    padding: 32px 70px;
+}
+
+.settings__additionalTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #231F20;
+    margin-bottom: 30px;
+}
+
+.settings__additionalList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+}
+
+.settings__additionalItem {
+    display: flex;
+    align-items: center;
+}
+
+.settings__additionalItemImg {
+    width: 40px;
+    height: 40px;
+}
+
+.settings__additionalItemNumber {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #9A9899;
+    margin-right: 48px;
+    margin-left: 20px;
+}
+
+.settings__additionalItemEdit {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #176EA5;
+    padding-right: 20px;
+    border-right: 1px solid rgba(155, 176, 190, 0.2);
+    cursor: pointer;
+
+}
+
+.settings__additionalItemSetprimary {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #176EA5;
+    padding: 0 20px;
+    border-right: 1px solid rgba(155, 176, 190, 0.2);
+    cursor: pointer;
+}
+
+.settings__additionalItemRemove {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #BD5939;
+    padding-left: 20px;
+    cursor: pointer;
+}

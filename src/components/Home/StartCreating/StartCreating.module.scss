@@ -1,0 +1,560 @@
+.wrapper {
+  padding: 198px 52px 138px;
+}
+
+.container {
+  display: flex;
+
+  max-height: 720px;
+  height: auto;
+
+  box-shadow: 2px 5px 20px var(--box-shadow2);
+  border-radius: 16px;
+}
+
+.infoBlockWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  width: 100%;
+
+  background-color: var(--secondary-1);
+
+  padding: 207px 50px 208px 51px;
+  border-radius: 16px 0px 0px 16px;
+
+  h2,
+  h5,
+  p {
+    color: var(--text-white);
+  }
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  background: var(--background-default);
+
+  padding: 57px 50px 56px;
+  border-radius: 0 16px 16px 0;
+}
+
+.submitWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  background: var(--background-default);
+
+  border-radius: 0 16px 16px 0;
+
+  padding: 167px 50px 167px;
+}
+
+.submitImage,
+.submitTitle,
+.submitText {
+  display: flex;
+  justify-content: center;
+}
+
+.submitTitle {
+  padding-top: 5px;
+}
+
+.submitText {
+  padding-top: 17px;
+  max-width: 335px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.links {
+  position: relative;
+  color: var(--text-light) !important;
+}
+
+.links:hover::after {
+  background-color: var(--text-light);
+}
+
+.links::after {
+  position: absolute;
+  content: ' ';
+  background-color: black;
+  width: 100%;
+  height: 1px;
+  top: 100%;
+  left: 0;
+}
+
+.links:focus {
+  color: var(--text-light) !important;
+}
+
+.subtitleWrapper {
+  padding-top: 17px;
+  max-width: 275px;
+}
+
+.textWrapper {
+  padding-top: 26px;
+}
+
+.titleFormWrapper {
+  text-align: center;
+  margin: 0 auto;
+
+  max-width: 335px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  max-width: 470px;
+
+  padding-top: 15px;
+}
+
+.nameWrapper {
+  padding-top: 30px;
+  label {
+    margin-bottom: 2px;
+  }
+}
+
+.emailWrapper {
+  padding-top: 53px;
+  label {
+    margin-bottom: 2px;
+  }
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 58px;
+}
+
+.bottomText {
+  padding-top: 8px;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.buttonActive {
+  button {
+    border: 2px solid var(--primary) !important;
+    font-weight: 700;
+    cursor: default;
+    transition: none;
+
+    .buttonBottomPart {
+      background: #fe7a39;
+      font-weight: 400 !important;
+    }
+
+    .buttonTopPart {
+      background: #fff !important;
+    }
+  }
+}
+
+.buttonGroupWidth {
+  width: 100%;
+  max-width: 103px;
+
+  button {
+    min-width: 96px;
+    max-width: 103px;
+    height: 66px;
+  }
+}
+
+.borderWrapperForm {
+  padding: 18px 0 13px;
+}
+
+.borderWrapperFormBottom {
+  padding: 26px 0 13px;
+}
+
+.buttonBottomPart {
+  background: var(--border-outlined-color);
+  margin: 0;
+  padding: 11px 0 7px;
+  color: #fff;
+  border-radius: 0 0 3px 3px;
+}
+
+.buttonTopPart {
+  margin: 0;
+  padding: 9px 0;
+}
+
+.buttonPartWrapper {
+  display: block;
+  padding: 0;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1119px) {
+  .buttonGroupWidth {
+    width: 100%;
+    padding: 0 5px;
+    max-width: 140px;
+    min-width: 100px;
+
+    button {
+      max-width: 140px;
+      width: 100%;
+      height: 66px;
+    }
+  }
+
+  .buttonGroupWidth:first-child {
+    padding-left: 0;
+  }
+
+  .buttonGroupWidth:last-child {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .wrapper {
+    padding: 117px 56px 133px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .container {
+    margin: 0 36px;
+    max-height: 702px;
+  }
+
+  .wrapper {
+    padding: 117px 24px 133px;
+  }
+
+  .infoBlockWrapper {
+    padding: 234px 50px 215px;
+  }
+
+  .formWrapper {
+    padding: 57px 50px 56px;
+  }
+
+  .titleFormWrapper {
+    max-width: 100%;
+  }
+
+  .buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
+  .buttonGroupWidth {
+    width: 100%;
+    padding: 0 7px;
+    max-width: 165px;
+    button {
+      max-width: 248px;
+      min-width: 120px;
+      width: 100%;
+      height: 66px;
+    }
+  }
+
+  .buttonGroupWidth:first-child {
+    padding-left: 0;
+  }
+
+  .buttonGroupWidth:last-child {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 1120px) and (max-width: 1299px) {
+  .buttonGroupWidth {
+    width: 100%;
+    padding: 0 5px;
+    max-width: 390px;
+
+    button {
+      max-width: 248px;
+      min-width: 120px;
+      width: 100%;
+      height: 66px;
+    }
+  }
+
+  .buttonGroupWidth:first-child {
+    padding-left: 0;
+  }
+
+  .buttonGroupWidth:last-child {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1010px) {
+  .buttonGroupWidth {
+    width: 100%;
+    max-width: 100px;
+
+    button {
+      min-width: 96px;
+      max-width: 100px;
+      height: 66px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .wrapper {
+    padding: 110px 8px 80px;
+  }
+
+  .container {
+    max-height: 738px;
+  }
+
+  .infoBlockWrapper {
+    padding: 231px 20px 230px;
+  }
+
+  .infoTitleWrapper {
+    p {
+      font-size: 34px;
+      line-height: 40px;
+    }
+  }
+
+  .formWrapper {
+    padding: 57px 16px 56px;
+  }
+
+  .borderWrapperForm {
+    padding: 20px 0 11px;
+  }
+
+  .subtitleWrapper {
+    padding-top: 11px;
+  }
+
+  .textWrapper {
+    padding-top: 14px;
+  }
+  .buttonGroupWidth {
+    width: 100%;
+    padding: 0 5px;
+    max-width: 140px;
+
+    button {
+      width: 100%;
+
+      font-size: 12px;
+      line-height: 18px;
+      max-width: 136px;
+      min-width: 100px;
+      height: 66px;
+    }
+  }
+
+  .buttonGroupWidth:first-child {
+    padding-left: 0;
+  }
+
+  .buttonGroupWidth:last-child {
+    padding-right: 0;
+  }
+
+  .submitTitle {
+    h2 {
+      font-size: 34px;
+      line-height: 40px;
+    }
+  }
+
+  .buttonBottomPart {
+    padding: 11px 0 11px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    padding: 110px 0px 80px;
+  }
+
+  .container {
+    flex-direction: column;
+    max-height: 1066px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .infoBlockWrapper {
+    padding: 34px 20px 33px;
+    border-radius: 16px 16px 0px 0px;
+  }
+  .subtitleWrapper {
+    padding-top: 11px;
+  }
+
+  .textWrapper {
+    padding-top: 14px;
+  }
+
+  .formWrapper {
+    padding: 36px 16px 35px;
+    border-radius: 0 0 16px 16px;
+  }
+
+  .submitWrapper {
+    border-radius: 0 0 16px 16px;
+    padding: 110px 0 110px;
+  }
+
+  .submitImage {
+    svg {
+      width: 140px;
+      height: 140px;
+    }
+  }
+
+  .submitText {
+    max-width: 296px;
+    padding-top: 13px;
+    h5 {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  .buttonGroupWidth {
+    width: 100%;
+    padding: 0;
+
+    button {
+      min-width: 92px;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 700;
+    }
+  }
+
+  .buttonGroupWidth:first-child {
+    padding-left: 0;
+  }
+
+  .buttonGroupWidth:last-child {
+    padding-right: 0;
+  }
+
+  .form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttonGroup {
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    min-width: 325px;
+    max-width: 335px;
+  }
+  .nameWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-width: 325px;
+    max-width: 335px;
+    width: 100%;
+  }
+
+  .emailWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-width: 325px;
+    max-width: 335px;
+    width: 100%;
+  }
+
+  .borderWrapperFormBottom,
+  .borderWrapperForm {
+    max-width: 335px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .buttonBottomPart {
+    padding: 11px 0 11.5px;
+  }
+}
+
+@media screen and (min-width: 391px) and (max-width: 400px) {
+  .nameWrapper {
+    min-width: 315px;
+  }
+
+  .emailWrapper {
+    min-width: 315px;
+  }
+  .buttonGroup {
+    min-width: 315px;
+  }
+
+  .borderWrapperFormBottom,
+  .borderWrapperForm {
+    max-width: 315px;
+    min-width: 315px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .buttonGroup {
+    min-width: 290px;
+    max-width: 296px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .nameWrapper {
+    min-width: 296px;
+  }
+
+  .emailWrapper {
+    min-width: 296px;
+  }
+
+  .bottomText {
+    max-width: 263px;
+    margin: 0 auto;
+  }
+
+  .buttonGroupWidth {
+    padding: 0 5px;
+    max-width: 100px;
+
+    button {
+      width: 92px;
+    }
+  }
+
+  .borderWrapperFormBottom,
+  .borderWrapperForm {
+    max-width: 296px;
+  }
+
+  .buttonGroupWidth:first-child {
+    padding-left: 0;
+  }
+
+  .buttonGroupWidth:last-child {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,57 @@
+:root {
+  --primary: #fc683f;
+  --secondary-1: #176ea5;
+  --secondary-2: #eaeaea;
+  --background-default: #ffffff;
+  --background-disabled: #d4d4d4;
+  --background-second: #e5e5e5;
+  --background-card: #f5f7ff;
+  --background-card-2: #2078b0;
+  --error: #cb3d40;
+  --primary-square-hover: rgba(254, 122, 57, 0.1);
+
+  --primary-hover: rgba(254, 122, 57, 0.1);
+
+  --breakpoint-xs: 0px;
+  --breakpoint-sm: 600px;
+  --breakpoint-td: 768px;
+  --breakpoint-md: 960px;
+  --breakpoint-lg: 1280px;
+  --breakpoint-xl: 1920px;
+
+  --text-light: #434f56;
+  --text-white: #fff;
+  --text-black: #000;
+  --text-link: #38424d;
+
+  --placeholder: #f1f2f6;
+  --box-shadow: rgba(205, 206, 210, 0.38);
+  --box-shadow2: rgba(191, 191, 191, 0.25);
+
+  --hr-color: #cfdfef;
+
+  --background-landing: #f6f7f9;
+
+  --blur: rgba(25, 56, 75, 0.33);
+
+  --li-fill1: #3296d4;
+  --li-fill2: #e0e4f5;
+
+  --border-hr: #e4ebf0;
+
+  --footer-link: #434f56;
+
+  --play-button-hover: #ffe0d0;
+
+  --background-banner: rgba(0, 0, 0, 0.85);
+
+  --scroll-color: #7e8d97;
+
+  --text-review: #434f56;
+
+  --field-placeholder: #b3c2cb;
+
+  --background-black: #000;
+
+  --border-outlined-color: #febc9c;
+}

@@ -1,0 +1,289 @@
+.wrapper {
+  padding: 85px 35px 0px;
+
+  h2,
+  h3 {
+    text-align: center;
+  }
+}
+
+.cardWrapper {
+  display: flex;
+  padding: 52px 0px 0;
+  flex-wrap: wrap;
+  background: #f6f7f9;
+  justify-content: center;
+  position: relative;
+
+  & > div {
+    max-width: calc((100% - 60px) / 2);
+
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  & > div:nth-of-type(n + 7) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1025px) {
+    padding: 30px 0px 0;
+  }
+
+  @media screen and (max-width: 1100px) {
+    padding-top: 48px;
+
+    & > div {
+      max-width: calc((100% - 50px) / 2);
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .wrapper {
+      padding: 70px 0px;
+    }
+    & > div {
+      max-width: calc((100% - 45px) / 2);
+    }
+
+    .container {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 30px;
+
+    & > div {
+      max-width: 100%;
+    }
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  vertical-align: top;
+  justify-content: flex-start;
+  text-align: left;
+  position: relative;
+
+  background: var(--background-default);
+  box-shadow: 2px 5px 20px var(--box-shadow2);
+  border-radius: 16px;
+
+  padding: 28px 30px 24px;
+
+  margin: 6px;
+
+  max-width: 282px;
+  text-align: center;
+}
+
+.cardInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cardInfoAbout {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.cardText {
+  text-align: left;
+  padding-top: 10px;
+}
+
+.showMoreContainer {
+  -webkit-line-clamp: 6;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.hrContainer {
+  width: 100%;
+  padding-top: 16px;
+
+  hr {
+    border-color: var(--border-hr);
+    width: 100%;
+    max-width: 450px;
+    height: 1px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: var(--border-hr);
+    background-color: var(--border-hr);
+  }
+}
+
+.subtitleWrapper {
+  margin-top: -5px;
+  p {
+    color: var(--text-review);
+  }
+}
+
+.cardImage {
+  border-radius: 50%;
+  position: relative;
+  width: 70px;
+  height: 70px;
+
+  div {
+    border-radius: 50%;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 44px;
+
+  button {
+    width: 192px;
+    height: 46px;
+  }
+}
+
+.showMoreInfoLabel {
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  button {
+    border: none;
+    background: #fff;
+
+    svg {
+      path {
+        fill: var(--secondary-1);
+      }
+    }
+  }
+}
+
+.showMoreTextButton {
+  color: var(--secondary-1);
+  font-size: 17px;
+  line-height: 26px;
+  padding-right: 4px;
+}
+
+.showMoreInfoButton {
+  vertical-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.cardTextUnvisible {
+  position: absolute;
+  opacity: -40;
+  visibility: hidden;
+  pointerevents: none;
+  padding: 15.5px;
+}
+
+@media screen and (min-width: 1101px) {
+  .wrapper {
+    padding: 105px 20px 81px;
+  }
+
+  .cardWrapper {
+    padding: 40px 20px 0;
+  }
+
+  .card {
+    padding: 40px 41px 34px;
+    margin: 15px;
+  }
+
+  .subtitleWrapper {
+    margin-top: 0px;
+  }
+
+  .hrContainer {
+    padding-top: 18px;
+  }
+
+  .cardText {
+    padding-top: 12px;
+  }
+
+  .buttonContainer {
+    padding-top: 36px;
+  }
+
+  .cardTextUnvisible {
+    padding: 20.5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .wrapper {
+    padding: 40px 0px 0px;
+
+    h2,
+    h3 {
+      font-size: 34px;
+      line-height: 40px;
+    }
+  }
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .cardWrapper {
+    padding-top: 36px;
+
+    & > div:nth-of-type(n + 5) {
+      display: none;
+    }
+  }
+
+  .card {
+    padding: 32px 30px 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    padding: 70px 0 0;
+  }
+
+  .card {
+    padding: 30px 30px 25px;
+    margin: 0 0 30px 0;
+  }
+
+  .cardWrapper {
+    padding-top: 42px;
+    max-width: 500px;
+    margin: 0 auto;
+
+    & > div:nth-of-type(n + 4) {
+      display: none;
+    }
+  }
+
+  .buttonContainer {
+    padding-top: 12px;
+  }
+}
+
+.cardVisible {
+  display: flex !important;
+}

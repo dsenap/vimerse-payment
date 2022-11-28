@@ -1,0 +1,458 @@
+.billingmethod {
+    background: #FFFFFF;
+    border: 1px solid rgba(155, 176, 190, 0.2);
+    border-radius: 0px 4px 4px 4px;
+}
+
+.billingmethod__controle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 64px;
+    border-bottom: 1px solid rgba(35, 31, 32, 0.2);
+
+}
+
+.billingmethod__controleTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #434F56;
+}
+
+.billingmethod__controleButton {
+    appearance: none;
+    background: none;
+    border: 1.5px solid #FE7A39;
+    border-radius: 27.5px;
+    padding: 10px 23px;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FE7A39;
+    cursor: pointer;
+}
+
+.billingmethod__bank {
+    appearance: none;
+    background: none;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 64px;
+    border-bottom: 1px solid rgba(35, 31, 32, 0.2);
+    cursor: pointer;
+}
+
+.billingmethod__backContent {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.billingmethod__backContentSwitch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #FE7A39;
+    border-radius: 50%;
+}
+
+.billingmethod__backContentSwitchCircul {
+    opacity: 0;
+    width: 12px;
+    height: 12px;
+    background: #FE7A39;
+    border-radius: 50%;
+}
+
+.billingmethod__backContentSwitchCirculActive {
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    background: #FE7A39;
+    border-radius: 50%;
+}
+
+.billingmethod__bankContentTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: rgba(35, 31, 32, 0.45);
+}
+
+.billingmethod__card {
+    appearance: none;
+    background: none;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 64px;
+    border-bottom: 1px solid rgba(35, 31, 32, 0.2);
+    cursor: pointer;
+
+}
+
+.billingmethod__cardContent {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.billingmethod__cardContentTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: rgba(35, 31, 32, 0.45);
+}
+
+.billingmethod__paypal {
+    appearance: none;
+    background: none;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 64px;
+    border-bottom: 1px solid rgba(35, 31, 32, 0.2);
+    cursor: pointer;
+
+}
+
+.billingmethod__paypalContent {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.cardsubmit {
+    padding: 37px 60px;
+    border-bottom: 1px solid rgba(35, 31, 32, 0.2);
+}
+
+.cardsubmitForm {
+    max-width: 672px;
+}
+
+.cardsubmitNumber {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.cardsubmitNumberBlock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.cardsubmitNumberTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #231F20;
+}
+
+.cardsubmitNumberInput {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #D3D2D2;
+    border-radius: 4px;
+}
+
+.cardsubmitName {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 41px;
+}
+
+.cardsubmitNameFirstText {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #231F20;
+    margin-bottom: 12px;
+
+}
+
+.cardsubmitNameFirstLabel {
+    width: 100%;
+}
+
+.cardsubmitNameFirstInput {
+    width: 100%;
+    border: 1px solid #D3D2D2;
+    border-radius: 4px;
+    padding: 17px 20px;
+}
+
+.cardsubmitNameLastText {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #231F20;
+    margin-bottom: 12px;
+}
+
+.cardsubmitNameLastLabel {
+    width: 100%;
+}
+
+.cardsubmitNameLastInput {
+    width: 100%;
+    border: 1px solid #D3D2D2;
+    border-radius: 4px;
+    padding: 17px 20px;
+}
+
+.cardsubmitFlex {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 41px;
+}
+
+.cardsubmitExpires {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cardsubmitExpiresTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #231F20;
+    margin-bottom: 12px;
+}
+
+.cardsubmitExpiresThoomb {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.cardsubmitExpiresInput {
+    width: 100%;
+    border: 1px solid #D3D2D2;
+    border-radius: 4px;
+    padding: 17px 20px;
+}
+
+.cardsubmitSecurity {
+    width: 100%;
+}
+
+.cardsubmitSecurityTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #231F20;
+    margin-bottom: 12px;
+}
+
+.cardsubmitSecurityInput {
+    width: 100%;
+    border: 1px solid #D3D2D2;
+    border-radius: 4px;
+    padding: 17px 20px;
+}
+
+.cardsubmitTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #231F20;
+    margin-bottom: 35px;
+}
+
+.cardsubmitCountry {
+    margin-bottom: 30px;
+}
+
+.cardsubmitCountryTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #231F20;
+    margin-bottom: 12px;
+}
+
+.cardsubmitCountrySelect {
+    border: 1px solid #D3D2D2;
+    border-radius: 4px;
+    padding: 17px 20px;
+}
+
+.cardsubmitAddress {
+    margin-bottom: 30px;
+}
+
+.cardsubmitAddressThoomb {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cardsubmitAddressTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #231F20;
+    margin-bottom: 12px;
+}
+
+.cardsubmitAddressInput {
+    border: 1px solid #D3D2D2;
+    border-radius: 4px;
+    padding: 17px 20px;
+}
+
+.cardsubmitCityTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #231F20;
+    margin-bottom: 12px;
+}
+
+.cardsubmitCity {
+    width: 100%;
+}
+
+.cardsubmitCityInput {
+    width: 100%;
+    border: 1px solid #D3D2D2;
+    border-radius: 4px;
+    padding: 17px 20px;
+}
+
+.cardsubmitState {
+    width: 100%;
+}
+
+.cardsubmitStateTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #231F20;
+    margin-bottom: 12px;
+}
+
+.cardsubmitStateInput {
+    width: 100%;
+    width: 100%;
+    border: 1px solid #D3D2D2;
+    border-radius: 4px;
+    padding: 17px 20px;
+}
+
+.paypalsubmit {
+    padding: 20px 60px 45px 60px;
+}
+
+.paypalsubmitDesc {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: rgba(35, 31, 32, 0.46);
+    margin-bottom: 20px;
+}
+
+.paypalsubmitButton {
+    appearance: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 55px;
+    background: #176EA5;
+    border-radius: 4px;
+    cursor: pointer;
+}

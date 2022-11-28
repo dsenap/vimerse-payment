@@ -1,0 +1,419 @@
+.card {
+  background: var(--background-landing);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  max-height: 625px;
+
+  @media screen and (min-width: 1025px) {
+    max-height: 900px;
+    // min-height: 700px;
+    height: 100%;
+  }
+
+  @media screen and (min-width: 1125px) and (max-width: 1186px) {
+    min-height: 727px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    max-height: 730px;
+  }
+}
+
+.cardWrapper {
+  margin: 6px;
+  box-shadow: 2px 5px 20px var(--box-shadow2);
+  width: 100%;
+  border-radius: 16px;
+
+  background-color: var(--background-default);
+
+  @media screen and (min-width: 1100px) {
+    margin: 15px 6px;
+  }
+
+  @media screen and (min-width: 1300px) {
+    margin: 15px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 500px !important;
+    margin: 15px auto;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin: 15px 0;
+  }
+}
+
+.main {
+  padding: 24px 20px 0px;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+
+  width: 100%;
+  background-color: var(--background-default);
+
+  @media screen and (min-width: 1100px) {
+    padding: 24px 40px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    padding: 26px 20px 26px;
+  }
+
+  @media screen and (min-width: 960px) and (max-width: 992px) {
+    padding: 24px 20px 24px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 26px 20px;
+  }
+}
+
+.info {
+  margin-bottom: auto;
+  //padding-bottom: 23px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    h4 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    max-height: 313px;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+
+    h4 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
+
+.title {
+  width: 100%;
+}
+
+.subtitle {
+  padding-top: 10px;
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 8px;
+    width: 100%;
+  }
+}
+
+.top {
+  position: relative;
+  //max-height: 184px;
+  //min-height: 236px;
+  width: 100%;
+  height: 100%;
+  min-height: auto;
+  max-height: 220px;
+}
+
+.ulWrapper {
+  padding-top: 18px;
+  max-width: 360px;
+
+  @media screen and (min-width: 1025px) {
+    max-width: 500px;
+  }
+}
+
+.ulComponentWrapper {
+  display: flex;
+  align-items: flex-start;
+  vertical-align: center;
+  padding: 5px 0;
+}
+
+.ulComponentText {
+  padding-left: 8px;
+}
+
+.svgWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonWrapperSvg:hover {
+  path {
+    fill: var(--play-button-hover) !important;
+  }
+}
+
+.placeholder {
+  height: 241px;
+
+  @media screen and (max-width: 768px) {
+    height: 184px;
+  }
+}
+
+.desktopImage,
+.mobileImage,
+.tabletImage,
+.desktopHQ {
+  display: none;
+  height: 100%;
+  min-height: 184px;
+  max-height: 312px;
+  background: var(--background-black);
+
+  position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-color: red;
+  }
+}
+
+.button {
+  padding: 12px 0;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 20px;
+
+  button {
+    width: 389px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    padding-bottom: 20px;
+    padding-top: 25px;
+
+    button {
+      width: 475px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    padding-bottom: 0px;
+    padding-top: 22px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 15px;
+    padding-top: 30px;
+  }
+}
+
+.video {
+  height: 100%;
+  min-height: 184px;
+  max-height: 241px;
+  //@media screen and (max-width: 767px) {
+  //  height: 250px;
+  //}
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  button {
+    padding: 0 2px;
+  }
+}
+
+.preload {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+
+  @media screen and (max-width: 767px) {
+    top: 40%;
+    left: 45%;
+  }
+}
+
+@media screen and (min-width: 362px) {
+  .desktopImage {
+    display: block;
+    position: relative;
+    min-height: auto;
+    max-height: 241px;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .desktopImage {
+    display: block;
+    position: relative;
+    min-height: 220px;
+    max-height: 312px;
+
+    height: 100%;
+  }
+
+  .top {
+    min-height: 220px;
+    max-height: 220px;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .video {
+    min-height: 220px;
+    max-height: 312px;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1099px) {
+  .desktopImage {
+    display: block;
+    position: relative;
+    height: 100%;
+  }
+
+  .card {
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+
+  //.video {
+  //  height: 241px;
+  //}
+}
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  .card {
+    min-height: auto;
+  }
+
+  .video {
+    min-height: auto;
+    max-height: 193px;
+  }
+
+  .top {
+    max-height: 193px;
+  }
+
+  .desktopImage {
+    max-height: 193px;
+  }
+
+  .ulComponentWrapper {
+    vertical-align: top;
+  }
+
+  .playButton {
+    button {
+      padding: 18px;
+    }
+
+    svg {
+      width: 32px;
+      height: 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .desktopImage {
+    display: block;
+    position: relative;
+    max-height: 220px;
+
+    img {
+      min-height: 184px;
+      max-height: 236px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    min-height: auto;
+  }
+
+  .top {
+    min-height: auto;
+    max-height: 240px;
+    background: var(--background-default);
+
+    img {
+      min-height: 184px;
+      max-height: 236px;
+    }
+  }
+
+  .playButton {
+    button {
+      padding: 12px;
+    }
+
+    svg {
+      width: 32px;
+      height: 36px;
+    }
+  }
+
+  //.video {
+  //  height: 200px;
+  //}
+}
+
+@media screen and (max-width: 450px) {
+  .desktopImage {
+    display: none;
+    position: relative;
+  }
+
+  .desktopImage {
+    display: block;
+    position: relative;
+    height: 183px;
+  }
+
+  .card {
+    height: auto;
+    max-height: 620px;
+  }
+
+  .top {
+    min-height: 183px;
+    max-height: 183px;
+    background: var(--background-default);
+
+    img {
+      min-height: 183px;
+      max-height: 183px;
+    }
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .card {
+    max-height: 700px;
+  }
+}

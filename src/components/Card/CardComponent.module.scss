@@ -1,0 +1,175 @@
+.card {
+  background: var(--background-landing);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  max-height: 511px;
+}
+
+.cardWrapper {
+  margin: 15px;
+  box-shadow: 2px 5px 20px var(--box-shadow2);
+  width: 100%;
+  border-radius: 16px;
+
+  background-color: var(--background-default);
+
+  @media screen and (max-width: 600px) {
+    margin: 15px 0;
+  }
+}
+
+.main {
+  padding: 26px 30px 30px;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--background-default);
+
+  @media screen and (max-width: 768px) {
+    padding: 16px 20px 23px;
+  }
+}
+
+.info {
+  margin-bottom: auto;
+  //padding-bottom: 23px;
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    //padding-bottom: 15px;
+  }
+}
+
+.title {
+  width: 100%;
+}
+
+.subtitle {
+  padding-top: 10px;
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 8px;
+    width: 100%;
+  }
+}
+
+.top {
+  position: relative;
+  //max-height: 184px;
+  //min-height: 236px;
+  width: 100%;
+  height: auto;
+}
+
+.placeholder {
+  height: 236px;
+  @media screen and (max-width: 768px) {
+    height: 184px;
+  }
+}
+
+.desktopImage,
+.mobileImage,
+.tabletImage,
+.desktopHQ {
+  display: none;
+  height: 100%;
+  min-height: 184px;
+  max-height: 236px;
+
+  position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.button {
+  padding: 12px 0;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4px;
+  padding-top: 4px;
+  @media screen and (max-width: 768px) {
+    padding-top: 4px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .desktopImage {
+    display: block;
+    position: relative;
+    mix-height: 184px;
+    max-height: 236px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 362px) {
+  .desktopImage {
+    display: block;
+    position: relative;
+    min-height: 184px;
+    max-height: 236px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1099px) {
+  .desktopImage {
+    display: block;
+    position: relative;
+    height: 236px;
+  }
+
+  .card {
+    height: 511px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .desktopImage {
+    display: none;
+    position: relative;
+  }
+
+  .mobileImage {
+    display: block;
+    position: relative;
+  }
+
+  .card {
+    height: 463px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    min-height: 172px;
+  }
+  .top {
+    min-height: 184px;
+    max-height: 240px;
+
+    img {
+      min-height: 184px;
+      max-height: 236px;
+    }
+  }
+}

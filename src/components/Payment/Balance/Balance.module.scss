@@ -1,0 +1,56 @@
+.balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px 60px;
+  max-width: 1358px;
+  background: #FFFFFF;
+  border: 1px solid rgba(155, 176, 190, 0.2);
+  border-radius: 4px;
+  margin-bottom: 56px;
+}
+
+.balance__totalTitle {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #647180;
+}
+
+.balance__totalDesc {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #647180;
+}
+
+.balance__payButton {
+  background: #FE8539;
+  border: 1px solid #FE8539;
+  border-radius: 27.5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #F6F7F9;
+  padding: 13px 50px;
+  cursor: pointer;
+}

@@ -1,0 +1,144 @@
+.wrapper {
+  margin: 140px auto;
+}
+
+.howItWorkPlaceholder {
+  height: 525px;
+}
+
+.benefitsPlaceholder {
+  height: 400px;
+}
+
+.pricingPlaceholder {
+  height: 940px;
+}
+
+.portfolioPlaceholder {
+  height: 2500px;
+}
+
+.whatWeDoPlaceholder {
+  height: 2500px;
+}
+
+.reviewsPlaceholder {
+  height: 1700px;
+}
+
+.startCreatingPlaceholder {
+  height: 500px;
+}
+
+@media (min-width: 1200px) {
+  .howItWorkPlaceholder {
+    height: 425px;
+  }
+
+  .benefitsPlaceholder {
+    height: 400px;
+  }
+
+  .pricingPlaceholder {
+    height: 1050px;
+  }
+
+  .portfolioPlaceholder {
+    height: 1800px;
+  }
+
+  .whatWeDoPlaceholder {
+    height: 1800px;
+  }
+
+  .reviewsPlaceholder {
+    height: 2375px;
+  }
+
+  .startCreatingPlaceholder {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .howItWorkPlaceholder {
+    height: 525px;
+  }
+
+  .benefitsPlaceholder {
+    height: 450px;
+  }
+
+  .pricingPlaceholder {
+    height: 1000px;
+  }
+
+  .portfolioPlaceholder {
+    height: 2500px;
+  }
+
+  .whatWeDoPlaceholder {
+    height: 2500px;
+  }
+
+  .reviewsPlaceholder {
+    height: 1850px;
+  }
+
+  .startCreatingPlaceholder {
+    height: 600px;
+  }
+}
+
+@media (max-width: 992px) {
+  .howItWorkPlaceholder {
+    height: 425px;
+  }
+
+  .benefitsPlaceholder {
+    height: 300px;
+  }
+
+  .pricingPlaceholder {
+    height: 925px;
+  }
+
+  .portfolioPlaceholder {
+    height: 2500px;
+  }
+
+  .whatWeDoPlaceholder {
+    height: 2500px;
+  }
+
+  .reviewsPlaceholder {
+    height: 1025px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    margin-bottom: 0px;
+  }
+
+  .howItWorkPlaceholder {
+    height: 1200px;
+  }
+
+  .benefitsPlaceholder {
+    height: 750px;
+  }
+
+  .pricingPlaceholder {
+    height: 2350px;
+  }
+
+  .whatWeDoPlaceholder {
+    height: 2500px;
+  }
+
+  .reviewsPlaceholder {
+    height: 1000px;
+    margin-bottom: 100px;
+  }
+}

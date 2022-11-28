@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  hr {
+    border-color: var(--hr-color);
+    width: 100%;
+    max-width: 450px;
+    height: 1px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: var(--hr-color);
+    background-color: var(--hr-color);
+  }
+}
+
+.svgContainer {
+  padding: 0 28px;
+
+  svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 24px;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.svgContainerNew {
+  padding: 0 16px;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}

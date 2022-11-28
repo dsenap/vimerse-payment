@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  header {
+    flex: 0 0 auto;
+  }
+
+  main {
+    position: relative;
+    flex: 1 0 auto;
+    padding-top: 59px;
+  }
+
+  //stick footer to the bottom
+  footer {
+    flex: 0 0 auto;
+  }
+}
+
+.footerPlaceholder {
+  background: var(--background-light);
+  height: 268px;
+
+  @media (max-width: 992px) {
+    height: 259px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper {
+    main {
+      padding-top: 50px;
+    }
+  }
+}

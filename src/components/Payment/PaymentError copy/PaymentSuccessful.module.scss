@@ -1,0 +1,82 @@
+.PaymentSuccessful {
+
+    padding: 90px 0;
+}
+
+.PaymentSuccessfulBlock {
+    padding: 80px 0;
+    background: #FFFFFF;
+    border: 1px solid rgba(155, 176, 190, 0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.PaymentSuccessfulTitle {
+    padding: 0;
+    margin: 0;
+    margin-top: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+
+    color: #25AE88;
+}
+
+.PaymentSuccessfulDesc {
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    text-align: center;
+
+    color: rgba(35, 31, 32, 0.46);
+    max-width: 591px;
+}
+
+.PaymentSuccessfulButton {
+    border: none;
+    margin: 0;
+    margin-top: 100px;
+    padding: 13px 57px;
+    background: #176EA5;
+    border-radius: 27.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #F6F7F9;
+    cursor: pointer;
+}
+
+.PaymentSuccessfulDownload {
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #9AAFBC;
+    cursor: pointer;
+}

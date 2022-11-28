@@ -1,0 +1,459 @@
+.wrapper {
+  padding: 20px 53px 92px;
+  @media (max-width: 992px) {
+    padding: 20px 28px 92px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 46px 0 50px;
+  }
+}
+
+.title {
+  max-width: 650px;
+  padding: 0 25px 66px;
+  text-align: center;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0 0 32px;
+  }
+}
+
+.titleAbout {
+  max-width: 650px;
+  padding: 44px 25px 62px;
+  text-align: center;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0 0 45px;
+  }
+}
+
+.lazyImageDesktop {
+  display: none;
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    //object-fit: cover;
+  }
+}
+
+.lazyDesk {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.lazyFull {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.buttonTop {
+  padding: 11px 0px 13px;
+  @media (max-width: 768px) {
+    padding: 10px 4px 14px;
+  }
+}
+
+.buttonBottom {
+  padding: 12px 0px 12px;
+  @media (max-width: 768px) {
+    padding: 11px 4px 13px;
+  }
+}
+
+.bannerImage {
+  border-radius: 16px;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 50px 85px 20px;
+  @media (min-width: 1025px) {
+    max-width: 870px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 992px) {
+    padding: 50px 0px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    padding: 12px 0px 20px;
+  }
+}
+
+.subtitleFirst {
+  text-align: center;
+  padding-bottom: 28px;
+  @media (max-width: 768px) {
+    padding-bottom: 30px;
+  }
+}
+
+.textFirst {
+  padding-bottom: 28px;
+  @media (max-width: 768px) {
+    padding-bottom: 18px;
+  }
+}
+
+.firstBlockAfterPhoto {
+  padding-bottom: 77px;
+  @media (max-width: 768px) {
+    padding-bottom: 70px;
+  }
+}
+
+.textFirst:last-child {
+  padding-bottom: 0;
+}
+
+.subtitleSecond {
+  padding-top: 80px;
+  text-align: center;
+  @media (max-width: 768px) {
+    padding-top: 70px;
+  }
+}
+
+.subtitleThird {
+  padding-top: 42px;
+  text-align: center;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+  }
+}
+
+.textSecond {
+  padding-top: 40px;
+  position: relative;
+  @media (max-width: 768px) {
+    padding-top: 30px;
+  }
+}
+
+.links {
+  position: relative;
+}
+
+.links:hover::after {
+  background-color: var(--secondary-1);
+}
+
+.links::after {
+  position: absolute;
+  content: ' ';
+  background-color: black;
+  width: 100%;
+  height: 1px;
+  top: 100%;
+  left: 0;
+}
+
+.paddingLeft {
+  @media (min-width: 992px) and (max-width: 1440px) {
+    padding-left: 15px;
+  }
+}
+
+.textThird {
+  padding-top: 28px;
+}
+
+.textFourth {
+  padding-top: 26px;
+}
+
+.borderContainer {
+  padding: 80px 0;
+  @media (max-width: 768px) {
+    padding: 70px 0;
+  }
+}
+
+.subtitleFourth {
+  text-align: center;
+}
+
+.preview {
+  height: 100%;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 25px;
+  background: #f6f7f9;
+  @media (max-width: 768px) {
+    height: 100%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    //object-fit: cover;
+    background: #f6f7f9;
+    border-radius: 16px;
+  }
+}
+
+.lazyImageDesktop,
+.lazyImageMobile,
+.lazyImageTablet,
+.lazyImageDesktopFull {
+  display: none;
+  height: 100%;
+  position: relative;
+}
+
+.lazyFull {
+  @media (min-width: 1440px) {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    background-image: url('/images/image-placeholder.svg');
+    min-height: 621px;
+    height: 100%;
+    width: 100%;
+    min-width: 1100px;
+  }
+}
+
+.lazyImageDesktopFull {
+  @media (min-width: 1440px) {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    background-image: url('/images/image-placeholder.svg');
+    min-height: 621px;
+    height: 100%;
+    width: 100%;
+    min-width: 1100px;
+  }
+}
+
+.lazyDesk {
+  @media (min-width: 768px) and (max-width: 949px) {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    min-height: 365px;
+    height: 100%;
+    width: 100%;
+    min-width: 600px;
+    background-image: url('/images/image-placeholder.svg');
+  }
+  @media (min-width: 950px) and (max-width: 1439px) {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    min-height: 489px;
+    height: 100%;
+    width: 100%;
+    min-width: 870px;
+    background-image: url('/images/image-placeholder.svg');
+  }
+}
+
+.lazyImageDesktop {
+  @media (min-width: 768px) and (max-width: 949px) {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    min-height: 365px;
+    height: 100%;
+    width: 100%;
+    min-width: 600px;
+    background-image: url('/images/image-placeholder.svg');
+  }
+
+  @media (min-width: 950px) and (max-width: 1439px) {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    min-height: 489px;
+    height: 100%;
+    width: 100%;
+    min-width: 870px;
+    background-image: url('/images/image-placeholder.svg');
+  }
+}
+
+.lazyImageTablet {
+  @media (min-width: 426px) and (max-width: 767px) {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.lazyImageMobile {
+  @media (max-width: 425px) {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+.updateContainer {
+  image {
+    width: 40px;
+    height: 40px;
+  }
+  display: flex;
+  align-items: center;
+}
+
+.updateWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  min-height: 488px;
+}
+
+.backForPS {
+  background: var(--background-black);
+  min-height: 488px;
+}
+
+.desktopImage {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.video {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 489px;
+  border-radius: 4px;
+  background-image: url('/images/image-placeholder.svg');
+}
+
+.firstBlock {
+  padding-top: 44px;
+  padding-bottom: 4px;
+}
+
+@media (min-width: 1100px) {
+  .video {
+    min-height: 550px;
+  }
+
+  .top {
+    min-height: 545px;
+  }
+
+  .backForPS {
+    min-height: 545px;
+  }
+}
+
+@media (max-width: 992px) {
+  .video {
+    min-height: 400px;
+  }
+
+  .top {
+    min-height: 390px;
+  }
+
+  .backForPS {
+    min-height: 390px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video {
+    min-height: 300px;
+  }
+  .top {
+    min-height: 290px;
+  }
+
+  .backForPS {
+    min-height: 290px;
+  }
+}
+
+@media (max-width: 450px) {
+  .video {
+    min-height: 188px;
+  }
+
+  .top {
+    min-height: 178px;
+  }
+  .backForPS {
+    min-height: 178px;
+  }
+}
+
+
+.ImageMobile{
+  display: none;
+  @media (max-width: 1024px) {
+    display: block;
+  }
+  .fulleimg{
+    width: 100%;
+    div, img {
+      width: 100%;
+    }
+  }
+}
+.ImageDesktop{
+  display: block;
+  width: 100%; 
+  @media (max-width: 1024px) {
+    display: none;
+  }
+  .fulleimg{
+    width: 100%;
+    text-align: center;
+    div, img {
+      width: 100%;
+    }
+  }
+}
+

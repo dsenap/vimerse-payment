@@ -1,0 +1,100 @@
+.InvoicesView {
+    padding: 60px 0;
+}
+
+.InvoicesViewBlock {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border: 1px solid rgba(155, 176, 190, 0.2);
+    border-radius: 4px;
+}
+
+.InvoicesViewList {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.InvoicesViewItem {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    padding: 24px 48px 24px 48px;
+    border-bottom: 1px solid rgba(35, 31, 32, 0.2);
+
+    &:first-child {
+        padding: 48px 48px 24px 48px;
+    }
+
+    &:last-child {
+        border: none;
+    }
+}
+
+.InvoicesViewTitle {
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    margin-right: 70px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+
+    color: rgba(35, 31, 32, 0.46);
+}
+
+.InvoicesViewDesc {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    word-wrap: normal;
+    word-break: break-all;
+    color: #231F20;
+}
+
+.InvoicesViewButtons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    padding: 0 48px 24px 0;
+}
+
+.InvoicesViewLink {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #96ABBA;
+    cursor: pointer;
+}
+
+.InvoicesViewPrint {
+    margin: 0;
+    border: none;
+    padding: 13px 30px;
+    background: #176EA5;
+    border-radius: 27.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #F6F7F9;
+    cursor: pointer;
+}
