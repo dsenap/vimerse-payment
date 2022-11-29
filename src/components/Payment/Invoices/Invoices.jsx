@@ -92,24 +92,24 @@ const Invoices = () => {
         {testData.map((num) => (
           <li className={styles.invoices__item}>
             <button
-              className={styles.invoise__itemSelect}
+              className={styles.invoices__itemSelect}
               onClick={() => {
                 ChangeSeleced(num.id);
               }}
             >
               <div
                 style={{ display: num.Selected ? 'block' : 'none' }}
-                className={styles.invoise__itemSelectOrange}
+                className={styles.invoices__itemSelectOrange}
               ></div>
             </button>
-            <p className={styles.invoise__itemDate}>{num.Date}</p>
-            <p className={styles.invoise__itemNumber}>{num.Number}</p>
-            <p className={styles.invoise__itemName}>{num.Name}</p>
-            <p style={{ color: colorSwitch(num.Status) }} className={styles.invoise__itemStatus}>
+            <p className={styles.invoices__itemDate}>{num.Date}</p>
+            <p className={styles.invoices__itemNumber}>{num.Number}</p>
+            <p className={styles.invoices__itemName}>{num.Name}</p>
+            <p style={{ color: colorSwitch(num.Status) }} className={styles.invoices__itemStatus}>
               {num.Status}
             </p>
-            <p className={styles.invoise__itemTotal}>{num.Total}</p>
-            <p className={styles.invoise__itemBalance}>{num.Balance}</p>
+            <p className={styles.invoices__itemTotal}>{num.Total}</p>
+            <p className={styles.invoices__itemBalance}>{num.Balance}</p>
             <button className={styles.invouse__itemView}>View</button>
           </li>
         ))}
