@@ -38,6 +38,12 @@
 }
 
 .settings__manageNew {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings__manageNewButton {
     background: none;
     border: 2px solid #176EA5;
     border-radius: 27.5px;

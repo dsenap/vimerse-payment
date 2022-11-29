@@ -1,6 +1,5 @@
-import React from 'react';
+import { React, useState } from 'react';
 import styles from './Invoices.module.scss';
-import { useState } from 'react';
 
 const Invoices = () => {
   const [testData, setTestDate] = useState([
@@ -53,9 +52,8 @@ const Invoices = () => {
     const newData = testData.map((num) => {
       if (id === num.id) {
         return { ...num, Selected: !num.Selected };
-      } else {
-        return num;
       }
+      return num;
     });
     setTestDate(newData);
   };
@@ -78,53 +76,65 @@ const Invoices = () => {
   };
   return (
     <div className={styles.invoices}>
-      <ul className={styles.invoices__type}>
-        <li className={styles.invoices__typeItem}>Selected</li>
-        <li className={styles.invoices__typeItem}>BILLING DATE</li>
-        <li className={styles.invoices__typeItem}>INVOICE number</li>
-        <li className={styles.invoices__typeItem}>project name</li>
-        <li className={styles.invoices__typeItem}>Status</li>
-        <li className={styles.invoices__typeItem}>TOTAL FEE</li>
-        <li className={styles.invoices__typeItem}>balance</li>
-        <li className={styles.invoices__typeItem}>Open View</li>
-      </ul>
-      <ul className={styles.invoices__list}>
-        {testData.map((num) => (
-          <li className={styles.invoices__item}>
-            <button
-              className={styles.invoices__itemSelect}
-              onClick={() => {
-                ChangeSeleced(num.id);
-              }}
-            >
-              <div
-                style={{ display: num.Selected ? 'block' : 'none' }}
-                className={styles.invoices__itemSelectOrange}
-              ></div>
-            </button>
-            <p className={styles.invoices__itemDate}>{num.Date}</p>
-            <p className={styles.invoices__itemNumber}>{num.Number}</p>
-            <p className={styles.invoices__itemName}>{num.Name}</p>
-            <p style={{ color: colorSwitch(num.Status) }} className={styles.invoices__itemStatus}>
-              {num.Status}
-            </p>
-            <p className={styles.invoices__itemTotal}>{num.Total}</p>
-            <p className={styles.invoices__itemBalance}>{num.Balance}</p>
-            <button className={styles.invouse__itemView}>View</button>
-          </li>
-        ))}
-      </ul>
-
+      <table>
+        <thead className={styles.invoices__type}>
+          <tr>
+            <th className={styles.invoices__typeItem}>Selected</th>
+            <th className={styles.invoices__typeItem}>BILLING DATE</th>
+            <th className={styles.invoices__typeItem}>INVOICE number</th>
+            <th className={styles.invoices__typeItem}>project name</th>
+            <th className={styles.invoices__typeItem}>Status</th>
+            <th className={styles.invoices__typeItem}>TOTAL FEE</th>
+            <th className={styles.invoices__typeItem}>balance</th>
+            <th className={styles.invoices__typeItem}>Open View</th>
+          </tr>
+        </thead>
+        <tbody className={styles.invoices__list}>
+          {testData.map((num) => (
+            <tr key={`invoice_item_${num.id}`}>
+              <td className={styles.invoices__itemSelected}>
+                <button
+                  type="button"
+                  className={styles.invoices__itemSelect}
+                  onClick={() => {
+                    ChangeSeleced(num.id);
+                  }}
+                >
+                  <div
+                    style={{ display: num.Selected ? 'block' : 'none' }}
+                    className={styles.invoices__itemSelectOrange}
+                  />
+                </button>
+              </td>
+              <td className={styles.invoices__itemDate}>{num.Date}</td>
+              <td className={styles.invoices__itemNumber}>{num.Number}</td>
+              <td className={styles.invoices__itemName}>{num.Name}</td>
+              <td style={{ color: colorSwitch(num.Status) }} className={styles.invoices__itemStatus}>
+                {num.Status}
+              </td>
+              <td className={styles.invoices__itemTotal}>{num.Total}</td>
+              <td className={styles.invoices__itemBalance}>{num.Balance}</td>
+              <td>
+                <button type="button" className={styles.invouse__itemView}>
+                  View
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
       <div className={styles.invoices__navigation}>
-        <button className={styles.invoices__navigationPrev}>
+        <button type="button" className={styles.invoices__navigationPrev}>
           <img style={{ width: '5px', height: '9px' }} src="./images/arrow-payment.svg" />
         </button>
         <ul className={styles.invoices__navigationList}>
           <li className={styles.nvoices__navigationItem}>
-            <button className={styles.invoices__navigationItemButton}>1</button>
+            <button type="button" className={styles.invoices__navigationItemButton}>
+              1
+            </button>
           </li>
         </ul>
-        <button className={styles.invoices__navigationNext}>
+        <button type="button" className={styles.invoices__navigationNext}>
           <img style={{ transform: 'rotate(180deg)', width: '5px', height: '9px' }} src="./images/arrow-payment.svg" />
         </button>
       </div>

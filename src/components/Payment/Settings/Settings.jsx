@@ -20,9 +20,11 @@ const Settings = () => {
             <h2 className={styles.settings__manageTitle}>Manage billing methods</h2>
             <p className={styles.settings__manageDesc}>Add,update, or remove your billing methods</p>
           </div>
-          <button className={styles.settings__manageNew} onClick={openBillingActive}>
-            Add a New Billing Method
-          </button>
+          <div className={styles.settings__manageNew}>
+            <button className={styles.settings__manageNewButton} onClick={openBillingActive}>
+              Add a New Billing Method
+            </button>
+          </div>
         </div>
         <div className={styles.settings__billing}>
           <h2 className={styles.settings__billingTitle}>Billing</h2>
@@ -69,7 +71,7 @@ const Settings = () => {
                 </ul>
               </div>
             </div>
-            <p className="settings__billing-text"> of each month</p>
+            <p className={styles.settings__billingFormLabel}> of each month</p>
           </div>
         </div>
         <div className={styles.settings__autoplay}>
