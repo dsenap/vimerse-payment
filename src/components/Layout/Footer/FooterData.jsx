@@ -6,8 +6,8 @@ import Tiktok from '../../../static/svg/mobile-menu-icon/tiktok.svg';
 import Storyblocks from '../../../static/svg/storyblocks.svg';
 import FrameIo from '../../../static/svg/frameIo.svg';
 import Adobe from '../../../static/svg/adobe.svg';
-import Finalcut from '../../../static/svg/finalcut-f1.svg';
-import Artlist from '../../../static/svg/artlist-f1.svg';
+import Finalcut from '../../../static/svg/Finalcut-f1.svg';
+import Artlist from '../../../static/svg/Artlist-f1.svg';
 
 export const firstBlockLinks = [
   {
