@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import styles from './Settings.module.scss';
 import Image from 'next/image';
+import styles from './Settings.module.scss';
 import mastercard from '../../../static/svg/mastercard.png';
 import visa from '../../../static/svg/visa.png';
 import BillingMethod from '../BillingMethod/BillingMethod';
@@ -83,7 +83,7 @@ const Settings = () => {
                 setAutoplayActive(!autoplayActive);
               }}
             >
-              <div className={styles.settings__autoplaySwitch}></div>
+              <div className={styles.settings__autoplaySwitch} />
             </button>
           </div>
           <p className={styles.settings__autoplayDesc}>

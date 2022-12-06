@@ -11,18 +11,20 @@ const StartCreating = () => {
   const router = useRouter();
 
   const handleSignup = (e) => {
-    e.preventDefault()
-    const isValid = _email.toString().toLowerCase().match(/\S+@\S+\.\S+/)
-    if (!!isValid) {
+    e.preventDefault();
+    const isValid = _email
+      .toString()
+      .toLowerCase()
+      .match(/\S+@\S+\.\S+/);
+    if (isValid) {
       router.push({
         pathname: '/signup',
-        query: { email: _email }
+        query: { email: _email },
       });
-
     } else {
       setEmailRequired(true);
     }
-  }
+  };
 
   return (
     <div className={styles.contanier}>
@@ -37,37 +39,34 @@ const StartCreating = () => {
       </div>
 
       <form onSubmit={(e) => handleSignup(e)} autoComplete="off" style={{ zIndex: 100 }}>
-            <div>
-                <input
-                  type="text"
-                  value={_email}
-                  className={styles.getStartedTextFld}
-                  onChange={(e) => {
-                    setEmail(e.target.value);
-                    if (emailRequired)
-                      setEmailRequired(false);
-                  }}
-                  onFocus={() => {
-                    if (_email == 'Email Address')
-                      setEmail('');
-                    if (emailRequired)
-                      setEmailRequired(false);
-                  }}
-                  style={{ border: emailRequired ? '1px solid red' : 'none' }}
-                />
+        <div>
+          <input
+            type="text"
+            value={_email}
+            className={styles.getStartedTextFld}
+            onChange={(e) => {
+              setEmail(e.target.value);
+              if (emailRequired) setEmailRequired(false);
+            }}
+            onFocus={() => {
+              if (_email == 'Email Address') setEmail('');
+              if (emailRequired) setEmailRequired(false);
+            }}
+            style={{ border: emailRequired ? '1px solid red' : 'none' }}
+          />
 
-                <Button
-                  variant="contained"
-                  color="primary"
-                  type="submit"
-                  size="large"
-                  onClick={(e) => handleSignup(e)}
-                  className={styles.getStartedBtn}
-                >
-                  Get Started
-                  <ArrowForwardIos className={styles.getStartedBtnArrow} />
-                </Button>
-              </div>
+          <Button
+            variant="contained"
+            color="primary"
+            type="submit"
+            size="large"
+            onClick={(e) => handleSignup(e)}
+            className={styles.getStartedBtn}
+          >
+            Get Started
+            <ArrowForwardIos className={styles.getStartedBtnArrow} />
+          </Button>
+        </div>
       </form>
     </div>
   );

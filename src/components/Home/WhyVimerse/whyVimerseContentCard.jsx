@@ -521,29 +521,29 @@ export const messagesWhyVimerse = defineMessages({
     id: 'whyVimerse_title1',
   },
   'Creating content is already cumbersome. So, we do not want to pressure you with a monthly subscription. Spend 5 minutes filling out the form in order to have premium-quality video content created for you in two calendar days. We will edit exactly as you like.':
-  {
-    defaultMessage:
-      'Creating content is already cumbersome. So, we do not want to pressure you with a monthly subscription. Spend 5 minutes filling out the form in order to have premium-quality video content created for you in two calendar days. We will edit exactly as you like.',
-    id: 'whyVimerse_text1',
-  },
+    {
+      defaultMessage:
+        'Creating content is already cumbersome. So, we do not want to pressure you with a monthly subscription. Spend 5 minutes filling out the form in order to have premium-quality video content created for you in two calendar days. We will edit exactly as you like.',
+      id: 'whyVimerse_text1',
+    },
   Captivating: {
     defaultMessage: 'Captivating',
     id: 'whyVimerse_title2',
   },
   "Our editing takes your videos to the next level. In addition to years of experience, we have researched editing techniques that help extend the viewer's watch time. This means greater engagement and more monetization opportunities for creators.":
-  {
-    defaultMessage:
-      "Our editing takes your videos to the next level. In addition to years of experience, we have researched editing techniques that help extend the viewer's watch time. This means greater engagement and more monetization opportunities for creators.",
-    id: 'whyVimerse_text2',
-  },
+    {
+      defaultMessage:
+        "Our editing takes your videos to the next level. In addition to years of experience, we have researched editing techniques that help extend the viewer's watch time. This means greater engagement and more monetization opportunities for creators.",
+      id: 'whyVimerse_text2',
+    },
   'Free trial': {
     defaultMessage: 'Free trial',
     id: 'whyVimerse_title3',
   },
   'We understand that these promises might sound too good to be true. So, we offer the first video editing service for free. As long as your raw footage is less than 45 minutes, it is free! No watermarks. No restriction on sharing the content.':
-  {
-    defaultMessage:
-      'We understand that these promises might sound too good to be true. So, we offer the first video editing service for free. As long as your raw footage is less than 45 minutes, it is free! No watermarks. No restriction on sharing the content.',
-    id: 'whyVimerse_text3',
-  },
+    {
+      defaultMessage:
+        'We understand that these promises might sound too good to be true. So, we offer the first video editing service for free. As long as your raw footage is less than 45 minutes, it is free! No watermarks. No restriction on sharing the content.',
+      id: 'whyVimerse_text3',
+    },
 });

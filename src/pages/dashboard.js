@@ -21,17 +21,17 @@ import {
   Box,
   Container,
 } from '@material-ui/core';
-import axios from '../utils/axios';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
 import { ExpandMore, KeyboardArrowDownRounded, KeyboardArrowUpOutlined } from '@material-ui/icons';
 import { useRouter } from 'next/router';
-import Button from '../components/Form/Button';
-import styles from '../styles/Dashboard.module.scss';
 import useAuth from 'src/hooks/useAuth';
 import withAuth from 'src/HOC/withAuth';
 import Layout from 'src/components/DashboardLayout/Layout';
 import Pagination from '@material-ui/lab/Pagination';
 import InfoIcon from '@material-ui/icons/Info';
+import styles from '../styles/Dashboard.module.scss';
+import Button from '../components/Form/Button';
+import axios from '../utils/axios';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -99,7 +99,7 @@ const Dashboard = () => {
       .then((response) => {
         const tasks = JSON.parse(JSON.stringify(response.data.tasks));
 
-        let taskData = tasks.map((item) => ({
+        const taskData = tasks.map((item) => ({
           status: item.status?.status?.toUpperCase() == 'INVOICED' ? 'COMPLETE' : item.status?.status?.toUpperCase(),
           statusId: status[item.status?.status?.toUpperCase()],
           color: item.status?.color,
@@ -177,7 +177,7 @@ const Dashboard = () => {
                 <a
                   className={styles.lnkStart}
                   href={`javascript:void( window.open( 'https://form.jotform.com/${
-                    jotformId ? jotformId : '220860020542139'
+                    jotformId || '220860020542139'
                   }?whatIs=${user.email}&name410=${
                     user.firstname
                   }', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=900' ) ) `}
@@ -205,7 +205,7 @@ const Dashboard = () => {
                 <a
                   className={styles.lnkStart}
                   href={`javascript:void( window.open( 'https://form.jotform.com/${
-                    jotformId ? jotformId : '220860020542139'
+                    jotformId || '220860020542139'
                   }?whatIs=${user.email}&name410=${
                     user.firstname
                   }', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=900' ) ) `}
@@ -267,7 +267,7 @@ const Dashboard = () => {
 
 const DataTableBig = (props) => {
   const classes = useStyles();
-  let { order, orderBy, onRequestSort } = props;
+  const { order, orderBy, onRequestSort } = props;
   const createSortHandler = (property) => (event) => {
     onRequestSort(event, property);
   };
@@ -326,7 +326,7 @@ const DataTableBig = (props) => {
                 <div>
                   <a
                     href="https://vimerse.portal.massive.app/"
-                    class="footagetooltip"
+                    className="footagetooltip"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ color: '#000' }}
@@ -363,7 +363,7 @@ const DataTableBig = (props) => {
 
         <TableBody>
           {props.rows.map((item) => {
-            const reviewLink = item.reviewLink;
+            const { reviewLink } = item;
 
             const reviewLinkValue = reviewLink.value ? (
               <a href={reviewLink.value} target="_blank" rel="noopener noreferrer">
@@ -383,7 +383,7 @@ const DataTableBig = (props) => {
               '-'
             );
 
-            const footage1 = item.footage1;
+            const { footage1 } = item;
             const footage1Value = footage1.value ? (
               <a href={footage1.value} target="_blank" rel="noopener noreferrer">
                 <Tooltip
@@ -402,11 +402,11 @@ const DataTableBig = (props) => {
               '-'
             );
 
-            const hoursTracked = item.hoursTracked;
+            const { hoursTracked } = item;
             const hoursTrackedValue = hoursTracked.value ? Number(hoursTracked.value).toFixed(1) : '-';
-            const transferFee = item.transferFee;
+            const { transferFee } = item;
             const transferFeeValue = transferFee.value ? `$${Number(transferFee.value).toFixed(2)}` : '-';
-            const clientInstructions = item.clientInstructions;
+            const { clientInstructions } = item;
             let tracked;
             if (hoursTracked.value) tracked = Number(hoursTracked.value) * 13;
             if (transferFee.value) tracked = (tracked + Number(transferFee.value)).toFixed(2);
@@ -435,7 +435,7 @@ const DataTableBig = (props) => {
 
                 <TableCell align="left">
                   {' '}
-                  <a href={clientInstructions} target="_blank">
+                  <a href={clientInstructions} target="_blank" rel="noreferrer">
                     {item.name === '' ? '-' : item.name}
                   </a>{' '}
                 </TableCell>
@@ -486,18 +486,17 @@ const DataTableBig = (props) => {
                   {(() => {
                     if (item.status === 'draft done' || item.status === 'approved' || item.status === 'complete')
                       return <img alt={item.status} src="/images/marked-calendar.png" className={styles.icon} />;
-                    else if (item.due_date === null) return '-';
-                    else
-                      return (
-                        <div style={{ color: '#fe7a39' }}>
-                          <center>
-                            {' '}
-                            {new Intl.DateTimeFormat('en-US', { day: '2-digit', month: 'short' }).format(
-                              item.due_date
-                            )}{' '}
-                          </center>
-                        </div>
-                      );
+                    if (item.due_date === null) return '-';
+                    return (
+                      <div style={{ color: '#fe7a39' }}>
+                        <center>
+                          {' '}
+                          {new Intl.DateTimeFormat('en-US', { day: '2-digit', month: 'short' }).format(
+                            item.due_date
+                          )}{' '}
+                        </center>
+                      </div>
+                    );
                   })()}
                 </TableCell>
 
@@ -525,7 +524,7 @@ const DataTableSmall = (props) => {
       <Table aria-label="simple table" size="medium">
         <TableBody>
           {props.rows.map((item, index) => {
-            const reviewLink = item.reviewLink;
+            const { reviewLink } = item;
 
             const reviewLinkValue = reviewLink.value ? (
               <a href={reviewLink.value} target="_blank" rel="noopener noreferrer">
@@ -545,7 +544,7 @@ const DataTableSmall = (props) => {
               '-'
             );
 
-            const footage1 = item.footage1;
+            const { footage1 } = item;
             const footage1Value = footage1.value ? (
               <a href={footage1.value} target="_blank" rel="noopener noreferrer">
                 <Tooltip
@@ -563,11 +562,11 @@ const DataTableSmall = (props) => {
             ) : (
               '-'
             );
-            const hoursTracked = item.hoursTracked;
+            const { hoursTracked } = item;
             const hoursTrackedValue = hoursTracked.value ? Number(hoursTracked.value).toFixed(1) : '-';
-            const transferFee = item.transferFee;
+            const { transferFee } = item;
             const transferFeeValue = transferFee.value ? `$${Number(transferFee.value).toFixed(2)}` : '-';
-            const clientInstructions = item.clientInstructions;
+            const { clientInstructions } = item;
             let tracked;
             if (hoursTracked.value) tracked = Number(hoursTracked.value) * 13;
             if (transferFee.value) tracked = (tracked + Number(transferFee.value)).toFixed(2);
@@ -603,7 +602,7 @@ const DataTableSmall = (props) => {
                     </IconButton>
 
                     <span className={styles.mobileTableText}>
-                      <a href={clientInstructions} target="_blank" style={{ fontSize: 16 }}>
+                      <a href={clientInstructions} target="_blank" style={{ fontSize: 16 }} rel="noreferrer">
                         {' '}
                         {item.name === '' ? '-' : item.name}{' '}
                       </a>
@@ -721,16 +720,15 @@ const DataTableSmall = (props) => {
                                         className={styles.icon}
                                       />
                                     );
-                                  else if (item.due_date === null) return '-';
-                                  else
-                                    return (
-                                      <div style={{ color: '#fe7a39' }}>
-                                        {' '}
-                                        {new Intl.DateTimeFormat('en-US', { day: '2-digit', month: 'short' }).format(
-                                          item.due_date
-                                        )}{' '}
-                                      </div>
-                                    );
+                                  if (item.due_date === null) return '-';
+                                  return (
+                                    <div style={{ color: '#fe7a39' }}>
+                                      {' '}
+                                      {new Intl.DateTimeFormat('en-US', { day: '2-digit', month: 'short' }).format(
+                                        item.due_date
+                                      )}{' '}
+                                    </div>
+                                  );
                                 })()}
                               </TableCell>
                             </TableRow>
@@ -814,11 +812,8 @@ const descendingComparator = (a, b, orderBy) => {
   return 0;
 };
 
-const getComparator = (order, orderBy) => {
-  return order === 'desc'
-    ? (a, b) => descendingComparator(a, b, orderBy)
-    : (a, b) => -descendingComparator(a, b, orderBy);
-};
+const getComparator = (order, orderBy) =>
+  order === 'desc' ? (a, b) => descendingComparator(a, b, orderBy) : (a, b) => -descendingComparator(a, b, orderBy);
 
 const stableSort = (array, comparator) => {
   const stabilizedThis = array.map((el, index) => [el, index]);
@@ -837,7 +832,7 @@ const stableSort = (array, comparator) => {
 //   </button>
 // );
 
-let AuthDashboard = withAuth(Dashboard);
+const AuthDashboard = withAuth(Dashboard);
 AuthDashboard.hasLocalLayout = true;
 AuthDashboard.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;

@@ -9,6 +9,7 @@ import styles from './SideMenu.module.scss';
 import Logo from '../../Logo';
 import { sideMenuDataContainer, sideMenuDataLinks, sideMenuSocialNetworkLinks } from './SideMenuData';
 import BookaCall from '../../../static/svg/mobile-menu-icon/bookcall.svg';
+
 const SideMenu = ({ setSideMenuOpen }) => {
   const [state, setState] = useState({
     left: true,
@@ -49,16 +50,17 @@ const SideMenu = ({ setSideMenuOpen }) => {
           <Logo />
         </div>
         <div className={styles.burgerLinkContainer}>
-        <MaterialLink href="/bookcall" onClick={handleLinkClick("bookcall")}>
-                <a className={styles.burgerLink}>
-                  <div className={styles.burgerLinkSvgContainerTop}><BookaCall/></div>
-                  <span className={styles.burgerLinkText}>Book a Call</span>
-                </a>
-              </MaterialLink>
-          </div>
+          <MaterialLink href="/bookcall" onClick={handleLinkClick('bookcall')}>
+            <a className={styles.burgerLink}>
+              <div className={styles.burgerLinkSvgContainerTop}>
+                <BookaCall />
+              </div>
+              <span className={styles.burgerLinkText}>Book a Call</span>
+            </a>
+          </MaterialLink>
+        </div>
         {sideMenuDataLinks.map((item) => (
           <div className={styles.burgerLinkContainer}>
-            
             {isHomePage ? (
               <MaterialLink
                 component={LinkScroll}

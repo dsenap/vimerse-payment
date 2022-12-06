@@ -24,7 +24,7 @@ export const sideMenuDataContainer = [
     text: {
       defaultMessage: 'Portfolio',
       id: 'side_menu_portfolio_string',
-    }, 
+    },
   },
   {
     href: '/about-us',
@@ -36,8 +36,8 @@ export const sideMenuDataContainer = [
       defaultMessage: 'About Us',
       id: 'side_menu_about_us_string',
     },
-  }, 
-  
+  },
+
   {
     href: '/articles',
     pathname: '/articles',
@@ -85,9 +85,7 @@ export const sideMenuDataContainer = [
 ];
 
 export const sideMenuDataLinks = [
- 
   {
-    
     to: 'how-it-works',
     duration: 1000,
     listLinkImage: <HowItWork />,
@@ -107,7 +105,7 @@ export const sideMenuDataLinks = [
     },
     target: '#pricing',
   },
-  /*{
+  /* {
     to: 'what-we-do',
     duration: 1400,
     listLinkImage: <WhatWeDo />,
@@ -116,7 +114,7 @@ export const sideMenuDataLinks = [
       id: 'side_menu_what_we_do_string',
     },
     target: '#what-we-do',
-  },*/
+  }, */
 ];
 
 export const sideMenuSocialNetworkLinks = [
@@ -128,14 +126,14 @@ export const sideMenuSocialNetworkLinks = [
       id: 'side_menu_YouTube_string',
     },
   },
-  /*{
+  /* {
     href: 'https://www.facebook.com/Vimerse-107293818225081',
     listSocialLinkImage: <Facebook />,
     textSocialLink: {
       defaultMessage: 'Facebook',
       id: 'side_menu_facebook_string',
     },
-  },*/
+  }, */
   {
     href: 'https://twitter.com/vimerse_media',
     listSocialLinkImage: <Twitter />,

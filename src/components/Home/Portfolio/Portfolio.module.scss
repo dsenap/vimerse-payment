@@ -108,7 +108,7 @@
   position: relative;
   margin: 0 auto;
 
-  &>div {
+  & > div {
     max-width: calc((100% - 100px) / 2);
 
     width: 100%;
@@ -126,7 +126,7 @@
   @media screen and (max-width: 1099px) {
     padding-top: 37px;
 
-    &>div {
+    & > div {
       max-width: calc((100% - 45px) / 2);
     }
   }
@@ -136,7 +136,7 @@
       padding: 70px 0px;
     }
 
-    &>div {
+    & > div {
       max-width: calc((100% - 45px) / 2);
     }
 
@@ -149,11 +149,11 @@
   @media screen and (max-width: 767px) {
     padding-top: 30px;
 
-    &>div {
+    & > div {
       max-width: 100%;
     }
 
-    &>div:nth-of-type(n + 4) {
+    & > div:nth-of-type(n + 4) {
       display: none;
     }
 

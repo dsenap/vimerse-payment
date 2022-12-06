@@ -1,13 +1,14 @@
 import React from 'react';
 import { Container, Typography } from '@material-ui/core';
 import { useIntl } from 'react-intl';
+import withOutAuth from 'src/HOC/withOutAuth';
 import ImgMediaCard from '../components/Card/CardComponent';
 import s from '../components/pagesComponent/articlesData/articles.module.scss';
 import SocialHead from '../components/SocialHead';
 import { articlesData } from '../components/pagesComponent/articlesData/articlesData';
 import useScrollToTop from '../hooks/useScrollToTop';
 import { LIGHT_HOUSE } from '../utils/regulars';
-import withOutAuth from 'src/HOC/withOutAuth';
+
 const Articles = ({ gps }) => {
   useScrollToTop();
 

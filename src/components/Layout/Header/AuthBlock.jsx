@@ -1,15 +1,16 @@
 import React from 'react';
 import s from 'src/components/Layout/Header/Header.module.scss';
-import { Link as MaterialLink, Typography ,IconButton ,ButtonBase,Box} from '@material-ui/core';
+import { Link as MaterialLink, Typography, IconButton, ButtonBase, Box } from '@material-ui/core';
 import Button from 'src/components/Form/Button';
 import { useIntl } from 'react-intl';
 import { useRouter } from 'next/router';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-scroll';
 import classNames from 'classnames';
-import colors from '../../../theme/colors';
 import useAuth from 'src/hooks/useAuth';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import colors from '../../../theme/colors';
+
 const useStyles = makeStyles(() => ({
   root: {
     color: colors.text.light,
@@ -35,9 +36,9 @@ const AuthBlock = () => {
 
     router.push(`/${target}`);
   };
-const {user,accessToken ,logout}=useAuth()
+  const { user, accessToken, logout } = useAuth();
 
-console.log(accessToken,user)
+  console.log(accessToken, user);
   return (
     <div className={s.authBlock}>
       {isHomePage ? (
@@ -124,49 +125,52 @@ console.log(accessToken,user)
       </MaterialLink>
 
       <div className={s.buttonWrapper2}>
-    { accessToken ?<Box display={"flex"}>
-       <Box mr={2}>
-         <Typography>
-           {user.firstname +" "+user.lastname}
-         </Typography>
-        <center> 
-          <ButtonBase onClick={()=>router.push("/profile")} style={{width:80}}>
-          <Typography align='center' color="primary" variant={"caption"}>
-           Edit Profile
-         </Typography></ButtonBase></center>
-       </Box>
-       <IconButton style={{width:40}} onClick={()=>logout()}>
-<ExitToAppIcon color="primary" style={{fontSize:36}}/>
-       </IconButton>
-       </Box>:
-        <>
-        <Button
-          className={s.signinBtn}
-          onClick={() => {
-            router.push('/signin');
-          }}
-          size="medium"
-          variant="outlined"
-          color="primary"
-        >
-          {formatMessage({ defaultMessage: 'Start creating', id: 'header_signin' })}
-        </Button>
+        {accessToken ? (
+          <Box display={'flex'}>
+            <Box mr={2}>
+              <Typography>{`${user.firstname} ${user.lastname}`}</Typography>
+              <center>
+                <ButtonBase onClick={() => router.push('/profile')} style={{ width: 80 }}>
+                  <Typography align="center" color="primary" variant={'caption'}>
+                    Edit Profile
+                  </Typography>
+                </ButtonBase>
+              </center>
+            </Box>
+            <IconButton style={{ width: 40 }} onClick={() => logout()}>
+              <ExitToAppIcon color="primary" style={{ fontSize: 36 }} />
+            </IconButton>
+          </Box>
+        ) : (
+          <>
+            <Button
+              className={s.signinBtn}
+              onClick={() => {
+                router.push('/signin');
+              }}
+              size="medium"
+              variant="outlined"
+              color="primary"
+            >
+              {formatMessage({ defaultMessage: 'Start creating', id: 'header_signin' })}
+            </Button>
 
-        <Button
-          className={s.signupBtn}
-          onClick={
-            ()=>router.push("/signup")
-            // isHomePage
-            //   ? () => document.getElementById('start-creating')?.scrollIntoView({ behavior: 'smooth' })
-            //   : handleLinkClick('#start-creating')
-          }
-          size="medium"
-          variant="contained"
-          color="primary"
-        >
-          {formatMessage({ defaultMessage: 'Start creating', id: 'header_signup' })}
-        </Button>
-        </>}
+            <Button
+              className={s.signupBtn}
+              onClick={
+                () => router.push('/signup')
+                // isHomePage
+                //   ? () => document.getElementById('start-creating')?.scrollIntoView({ behavior: 'smooth' })
+                //   : handleLinkClick('#start-creating')
+              }
+              size="medium"
+              variant="contained"
+              color="primary"
+            >
+              {formatMessage({ defaultMessage: 'Start creating', id: 'header_signup' })}
+            </Button>
+          </>
+        )}
       </div>
     </div>
   );

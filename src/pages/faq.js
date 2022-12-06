@@ -1,11 +1,12 @@
 import React from 'react';
 import { Container, Link as MaterialLink, Typography } from '@material-ui/core';
 import { useIntl } from 'react-intl';
+import withOutAuth from 'src/HOC/withOutAuth';
 import s from '../components/pagesComponent/FAQData/FAQ.module.scss';
 import SocialHead from '../components/SocialHead';
 import useScrollToTop from '../hooks/useScrollToTop';
 import { LIGHT_HOUSE } from '../utils/regulars';
-import withOutAuth from 'src/HOC/withOutAuth';
+
 const FAQ = ({ gps }) => {
   useScrollToTop();
 

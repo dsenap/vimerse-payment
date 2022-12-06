@@ -3,6 +3,7 @@ import { Container, Typography } from '@material-ui/core';
 import LazyLoad from 'react-lazyload';
 import { useIntl } from 'react-intl';
 import Image from 'next/image';
+import withOutAuth from 'src/HOC/withOutAuth';
 import s from '../components/pagesComponent/aboutUsData/aboutUs.module.scss';
 import SocialHead from '../components/SocialHead';
 import useScrollToTop from '../hooks/useScrollToTop';
@@ -10,7 +11,7 @@ import Article4 from '../../public/images/aboutUs/dekstop_about_us.png';
 import Articlerow1 from '../../public/images/aboutUs/About_usrow1.jpg';
 import Articlerow2 from '../../public/images/aboutUs/About_usrow2.jpg';
 import { LIGHT_HOUSE } from '../utils/regulars';
-import withOutAuth from 'src/HOC/withOutAuth';
+
 const AboutUs = ({ gps }) => {
   useScrollToTop();
 
@@ -223,8 +224,6 @@ const AboutUs = ({ gps }) => {
   );
 };
 export default withOutAuth(AboutUs);
-
-
 
 export const getServerSideProps = async (ctx) => ({
   props: {

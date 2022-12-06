@@ -55,7 +55,7 @@ const BillingMethod = ({ openBillingActive }) => {
                   ? styles.billingmethod__backContentSwitchCirculActive
                   : styles.billingmethod__backContentSwitchCircul
               }
-            ></div>
+            />
           </div>
 
           <h2 className={styles.billingmethod__bankContentTitle}>Bank Account</h2>
@@ -80,7 +80,7 @@ const BillingMethod = ({ openBillingActive }) => {
                   ? styles.billingmethod__backContentSwitchCirculActive
                   : styles.billingmethod__backContentSwitchCircul
               }
-            ></div>
+            />
           </div>
           <h2 className={styles.billingmethod__cardContentTitle}>
             Payment card, Visa, Mastercard, American Express, Discover, Diners
@@ -92,7 +92,7 @@ const BillingMethod = ({ openBillingActive }) => {
           <div className={styles.cardsubmitNumber}>
             <div className={styles.cardsubmitNumberBlock}>
               <h2 className={styles.cardsubmitNumberTitle}>Card Number</h2>
-              <div className={styles.cardsubmitNumberImages}></div>
+              <div className={styles.cardsubmitNumberImages} />
             </div>
             <label className={styles.cardsubmitNumberLabel}>
               <input type="text" className={styles.cardsubmitNumberInput} />
@@ -121,7 +121,7 @@ const BillingMethod = ({ openBillingActive }) => {
             <div className={styles.cardsubmitSecurity}>
               <div className={styles.cardsubmitSecurityInfo}>
                 <p className={styles.cardsubmitSecurityTitle}>Security Code</p>
-                <div className={styles.cardsubmitSecurityBecause}></div>
+                <div className={styles.cardsubmitSecurityBecause} />
               </div>
               <input type="text" className={styles.cardsubmitSecurityInput} />
             </div>
@@ -172,7 +172,7 @@ const BillingMethod = ({ openBillingActive }) => {
                   ? styles.billingmethod__backContentSwitchCirculActive
                   : styles.billingmethod__backContentSwitchCircul
               }
-            ></div>
+            />
           </div>
           <Image src={paypal} />
         </div>

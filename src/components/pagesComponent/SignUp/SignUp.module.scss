@@ -4,14 +4,14 @@
   align-items: center;
   text-align: center;
 }
-.mainsignup{ 
+.mainsignup {
   padding: 60px 0;
-  .mbnone{
-    @media (max-width:1024px){
+  .mbnone {
+    @media (max-width: 1024px) {
       display: none;
     }
   }
-  .lineheight21{
+  .lineheight21 {
     line-height: 21px;
   }
   Button.btnsignin {
@@ -24,80 +24,80 @@
     border: 1px solid #fe7a39;
     color: #fff;
     width: 100%;
-  } 
+  }
   Button.btnsignin:focus {
     box-shadow: none;
     background-color: #fe7a39;
     border-color: #fe7a39;
-  } 
-  .padding40{
+  }
+  .padding40 {
     padding: 40px;
   }
-  .marbtm15{
+  .marbtm15 {
     margin-bottom: 15px;
   }
-  .lightext{
+  .lightext {
     font-weight: 200;
   }
-  .headingtext{
+  .headingtext {
     font-weight: 200;
     margin-bottom: 20px;
-    @media (max-width:767px){
+    @media (max-width: 767px) {
       text-align: center;
       font-size: 28px;
     }
   }
-  .papercarde{
+  .papercarde {
     padding: 40px;
-    background: #FFFFFF; 
+    background: #ffffff;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.05);
     border-radius: 16px;
   }
-  .themetext{
+  .themetext {
     color: #fe7a39;
-    &:focus{
+    &:focus {
       color: #fe7a39;
     }
   }
-  .centerflex{
+  .centerflex {
     display: flex;
     align-items: center;
   }
-  .centertext{
+  .centertext {
     text-align: center;
   }
-  .rightext{
+  .rightext {
     text-align: right;
   }
-  .displaynone{
+  .displaynone {
     display: none;
   }
-  .divider{
+  .divider {
     position: relative;
     padding: 20px 0px;
     text-align: center;
-    span{
+    span {
       z-index: 1;
       background-color: #fff;
       padding: 0px 17px;
       line-height: 19px;
       position: relative;
-      color: #CFDFEF;
+      color: #cfdfef;
     }
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       width: 100%;
       left: 0;
       height: 2px;
       margin-top: 11px;
-      background: #CFDFEF; 
+      background: #cfdfef;
     }
   }
-  .btngoogle{ 
+  .btngoogle {
     button {
       width: 100%;
-      background-color: #4285F4 !important;
+      background-color: #4285f4 !important;
       border-radius: 7px !important;
       color: #fff !important;
       font-weight: 600;
@@ -109,7 +109,7 @@
       position: relative;
       overflow: hidden;
       box-shadow: none !important;
-      & > div{
+      & > div {
         margin-right: 10px;
         background: #fff;
         padding: 0;
@@ -119,47 +119,48 @@
         position: absolute;
         left: 0px;
         width: 36px;
-        height: 37px; 
+        height: 37px;
         border-radius: 4px 0 0 4px;
         top: 0;
       }
     }
   }
-  .formerControler{  
+  .formerControler {
     .passtextbox {
-      width: 100%;  
+      width: 100%;
     }
-    label + div::before, label + div::after{
+    label + div::before,
+    label + div::after {
       display: none;
-    } 
-    label{
+    }
+    label {
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
-      color: #434F56;
+      color: #434f56;
       padding-bottom: 8px;
       display: block;
     }
     input {
       height: 48px;
-      border: 1px solid #9BB0BE;
+      border: 1px solid #9bb0be;
       box-sizing: border-box;
       border-radius: 4px;
       background-color: transparent;
       padding-left: 14px;
-    } 
-    input + fieldset{
+    }
+    input + fieldset {
       border: none;
     }
-    .errors{
+    .errors {
       color: red;
       padding-top: 10px;
       display: table;
     }
-    .btneyes{
+    .btneyes {
       position: absolute;
       right: 13px;
     }
-  } 
+  }
 }

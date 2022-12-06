@@ -21,9 +21,9 @@ const Portfolio = () => {
     }
   }, []);
 
-window.onload = function() {
-  document.getElementById('__next').className = 'expand';
-};
+  window.onload = function () {
+    document.getElementById('__next').className = 'expand';
+  };
 
   return (
     <div className={styles.wrapper} id="dv_portfolio">

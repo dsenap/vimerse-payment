@@ -3,10 +3,11 @@ import { Container, Typography } from '@material-ui/core';
 import { useIntl } from 'react-intl';
 import { ArrowForwardIos } from '@material-ui/icons';
 import { useRouter } from 'next/router';
+import dynamic from 'next/dynamic';
 import styles from './Banner.module.scss';
 import Button from '../../Form/Button';
-import dynamic from 'next/dynamic'
-const VideoSection = dynamic(() => import('./VideoSection'))
+
+const VideoSection = dynamic(() => import('./VideoSection'));
 const Banner = ({ to, isGps }) => {
   const [isTimeoutForSpeedLoadVideo, setIsTimeoutForSpeedLoadVideo] = useState(false);
   const [_email, setEmail] = useState('Email Address');
@@ -33,27 +34,25 @@ const Banner = ({ to, isGps }) => {
   // };
 
   const handleSignup = (e) => {
-    e.preventDefault()
-    const isValid = _email.toString().toLowerCase().match(/\S+@\S+\.\S+/)
-    if (!!isValid) {
+    e.preventDefault();
+    const isValid = _email
+      .toString()
+      .toLowerCase()
+      .match(/\S+@\S+\.\S+/);
+    if (isValid) {
       router.push({
         pathname: '/signup',
-        query: { email: _email }
+        query: { email: _email },
       });
-
     } else {
       setEmailRequired(true);
     }
-  }
+  };
 
   return (
     <div className={styles.wrapper} itemScope itemType="https://schema.org/Article">
       <div className={styles.blur} />
-      <div className={styles.videoWrapper}>
-        {isTimeoutForSpeedLoadVideo && (
-          <VideoSection/>
-        )}
-      </div>
+      <div className={styles.videoWrapper}>{isTimeoutForSpeedLoadVideo && <VideoSection />}</div>
       <div className={styles.preview}>
         {/* <div className={styles.lazyImageMobile}>
           <Image itemProp="image" src={Banner1} alt="Banner image" placeholder="blur" />
@@ -93,14 +92,11 @@ const Banner = ({ to, isGps }) => {
                   className={styles.getStartedTextFld}
                   onChange={(e) => {
                     setEmail(e.target.value);
-                    if (emailRequired)
-                      setEmailRequired(false);
+                    if (emailRequired) setEmailRequired(false);
                   }}
                   onFocus={() => {
-                    if (_email == 'Email Address')
-                      setEmail('');
-                    if (emailRequired)
-                      setEmailRequired(false);
+                    if (_email == 'Email Address') setEmail('');
+                    if (emailRequired) setEmailRequired(false);
                   }}
                   style={{ border: emailRequired ? '1px solid red' : 'none' }}
                 />

@@ -51,17 +51,17 @@ AuthProvider.propTypes = {
 function AuthProvider({ children }) {
   const [profile, setProfile] = useState(null);
   const [state, dispatch] = useReducer(reducer, initialState);
-  let router = useRouter();
+  const router = useRouter();
 
   useEffect(() => {
-    let accessToken = localStorage.getItem('accessToken');
-    let refreshToken = localStorage.getItem('refreshToken');
-    let user = localStorage.getItem('user');
+    const accessToken = localStorage.getItem('accessToken');
+    const refreshToken = localStorage.getItem('refreshToken');
+    const user = localStorage.getItem('user');
     dispatch({
       type: 'INITIALISE',
       payload: { accessToken, refreshToken, user: JSON.parse(user) },
     });
-    //addJWTInterceptor(accessToken)
+    // addJWTInterceptor(accessToken)
   }, []);
 
   const login = (accessToken, refreshToken, user) => {
@@ -82,7 +82,7 @@ function AuthProvider({ children }) {
   const loginWithGoogle = () => {};
 
   const resendEmailVerification = () => {
-    //return state.user.sendEmailVerification();
+    // return state.user.sendEmailVerification();
   };
 
   const updateProfile = (data) => {};

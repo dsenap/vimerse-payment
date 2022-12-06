@@ -19,12 +19,13 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-nextjs-toast';
-import s from '../components/pagesComponent/SignIn/SignIn.module.scss';
 import useAuth from 'src/hooks/useAuth';
 import { useSnackbar } from 'notistack';
 import MailIcon from '@material-ui/icons/Mail';
 import withOutAuth from 'src/HOC/withOutAuth';
 import ReactGA from 'react-ga';
+import s from '../components/pagesComponent/SignIn/SignIn.module.scss';
+
 const SignIn = () => {
   const router = useRouter();
   const [activeError, setActiveError] = useState(false);

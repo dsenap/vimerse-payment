@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazyload';
 import { useIntl } from 'react-intl';
+import withOutAuth from 'src/HOC/withOutAuth';
 import Banner from '../components/Home/Banner/Banner';
 import {
   Exclusive,
@@ -21,8 +22,8 @@ import {
   ReviewsPlaceholder,
 } from '../components/pagesComponent/placeholders/homePagePlaceholders';
 import { LIGHT_HOUSE } from '../utils/regulars';
-import withOutAuth from 'src/HOC/withOutAuth';
- function Home({ gps }) {
+
+function Home({ gps }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const { formatMessage } = useIntl();
@@ -61,8 +62,8 @@ import withOutAuth from 'src/HOC/withOutAuth';
       {/* <LazyLoad once placeholder={<WhatWeDoPlaceholder />}>
         <WhatWeDo />
       </LazyLoad> */}
-        <LazyLoad once>
-      <FirstClass />
+      <LazyLoad once>
+        <FirstClass />
       </LazyLoad>
       <LazyLoad once placeholder={<ReviewsPlaceholder />}>
         <Reviews />
@@ -72,8 +73,7 @@ import withOutAuth from 'src/HOC/withOutAuth';
   );
 }
 
-
-export default withOutAuth(Home)
+export default withOutAuth(Home);
 export const getServerSideProps = async (ctx) => ({
   props: {
     gps: ctx?.req?.headers['user-agent'].match(LIGHT_HOUSE),

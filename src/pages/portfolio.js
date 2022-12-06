@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { Container, Link as Typography, Grid } from '@material-ui/core';
 import { useIntl } from 'react-intl';
+import withOutAuth from 'src/HOC/withOutAuth';
 import style from '../styles/Portfolio.module.scss';
 import SocialHead from '../components/SocialHead';
 import useScrollToTop from '../hooks/useScrollToTop';
 import Portfolios from '../utils/portfolio';
 import CardPortfolio from '../components/Portfolio/CardPortfolio/CardPortfolio';
-import withOutAuth from 'src/HOC/withOutAuth';
+
 const Portfolio = () => {
   useScrollToTop();
   const [selected, setSelected] = React.useState(0);
@@ -43,18 +44,29 @@ const Portfolio = () => {
 
         <Grid direction="row" justifyContent="center" alignItems="center" container spacing={2}>
           <Grid item xs={12}>
-            <Typography itemProp="publisher" variant="h2" component="p" align="center" style={{ color: 'white !important' }}>
+            <Typography
+              itemProp="publisher"
+              variant="h2"
+              component="p"
+              align="center"
+              style={{ color: 'white !important' }}
+            >
               Our Portfolio
             </Typography>
           </Grid>
 
           <Grid item xs={12}>
-            <Container maxWidth={"md"}>
-            <Typography itemProp="publisher" variant="h4" component="p" align="center" style={{ color: 'white !important' }}>
-              We help content creators make more and better video content. Here are
-          
-              some of the projects that we have completed.
-            </Typography>
+            <Container maxWidth={'md'}>
+              <Typography
+                itemProp="publisher"
+                variant="h4"
+                component="p"
+                align="center"
+                style={{ color: 'white !important' }}
+              >
+                We help content creators make more and better video content. Here are some of the projects that we have
+                completed.
+              </Typography>
             </Container>
           </Grid>
         </Grid>
@@ -86,16 +98,8 @@ const Portfolio = () => {
             })}
           </Grid>
 
-          <Grid
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-            container
-            spacing={2}
-         
-          >
-            {
-              !!list &&
+          <Grid direction="row" justifyContent="center" alignItems="center" container spacing={2}>
+            {!!list &&
               list?.map((item, index) => (
                 <CardPortfolio title={item.title} classes={active && style.cardVisible} videoId={item.id} id={index} />
               ))}

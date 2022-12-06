@@ -2,10 +2,10 @@ import React from 'react';
 import { Container, Grid, makeStyles } from '@material-ui/core';
 import { useIntl } from 'react-intl';
 import { InlineWidget } from 'react-calendly';
+import withOutAuth from 'src/HOC/withOutAuth';
 import style from '../styles/bookcall.module.scss';
 import SocialHead from '../components/SocialHead';
 import useScrollToTop from '../hooks/useScrollToTop';
-import withOutAuth from 'src/HOC/withOutAuth';
 // const useStyles = makeStyles({
 //   bannerTextContentBig: {
 //     color: 'white',

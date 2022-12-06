@@ -22,7 +22,7 @@
 .portfolioRectBanner {
   width: auto;
   height: 240px;
-  background: linear-gradient(86.12deg, #FE7A39 0%, #FE9839 100%);
+  background: linear-gradient(86.12deg, #fe7a39 0%, #fe9839 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,12 +35,11 @@
   width: 100%;
 }
 
-
 .chip {
   width: auto;
-  height: 34px; 
+  height: 34px;
   padding: 17px 19px !important;
-  border: 1px solid #9BB0BE;
+  border: 1px solid #9bb0be;
   box-sizing: border-box;
   border-radius: 24px;
   margin: 4px !important;
@@ -53,11 +52,11 @@
 
 .chipSelected {
   width: auto;
-  height: 34px; 
-  background: #176EA5;
+  height: 34px;
+  background: #176ea5;
   border-radius: 24px;
   margin: 1px !important;
-  padding: 17px 19px !important; 
+  padding: 17px 19px !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,18 +70,17 @@
   font-size: 16px;
   line-height: 19px;
 
-  color: #9BB0BE;
+  color: #9bb0be;
 }
 
 .chipSelectedText {
-
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .portfolioVideoFooter {
@@ -110,7 +108,7 @@
   position: relative;
   margin: 0 auto;
 
-  &>div {
+  & > div {
     max-width: calc((100% - 100px) / 2);
 
     width: 100%;
@@ -128,7 +126,7 @@
   @media screen and (max-width: 1099px) {
     padding-top: 37px;
 
-    &>div {
+    & > div {
       max-width: calc((100% - 45px) / 2);
     }
   }
@@ -138,7 +136,7 @@
       padding: 70px 0px;
     }
 
-    &>div {
+    & > div {
       max-width: calc((100% - 45px) / 2);
     }
 
@@ -151,11 +149,11 @@
   @media screen and (max-width: 767px) {
     padding-top: 30px;
 
-    &>div {
+    & > div {
       max-width: 100%;
     }
 
-    &>div:nth-of-type(n + 4) {
+    & > div:nth-of-type(n + 4) {
       display: none;
     }
 

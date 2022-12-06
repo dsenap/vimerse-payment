@@ -4,37 +4,37 @@
   align-items: center;
   text-align: center;
 }
-.mainprofile{ 
-  padding: 40px 0; 
-  .mbnone{
-    @media (max-width:1024px){
+.mainprofile {
+  padding: 40px 0;
+  .mbnone {
+    @media (max-width: 1024px) {
       display: none;
     }
   }
-  .divider{
+  .divider {
     margin: 15px 0px;
     width: 100%;
     //margin-right: 3%;
   }
-  .userpicture{
-      margin-bottom: 15px;
-     .picture{   
-        border-radius: 50%;
-        height: 100px;
-        width: 100px;
-     }
+  .userpicture {
+    margin-bottom: 15px;
+    .picture {
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+    }
   }
-  .checkbox{
+  .checkbox {
     margin: 10px 0px;
-     div{
-        line-height: 21px;
-     }
+    div {
+      line-height: 21px;
+    }
   }
- .savecancel{
+  .savecancel {
     justify-content: end;
     margin-top: 10px;
- }
-  .btncancel{
+  }
+  .btncancel {
     color: #fe7a39;
     margin-top: 14px;
     cursor: pointer;
@@ -50,71 +50,70 @@
     border: 1px solid #fe7a39;
     color: #fff;
     width: 100%;
-  } 
+  }
   Button.btnsave:focus {
     box-shadow: none;
     background-color: #fe7a39;
     border-color: #fe7a39;
-  } 
-  .formerControler{
+  }
+  .formerControler {
     .containeritem {
-        justify-content: space-around;
-       .changebtn{
-          font-size: 15px;
-          font-weight: 400;
-          position: relative;
-          left: 200px;
-          bottom: 49px;
-          border-radius: 0px;
-          padding: 3px 8px;
-          min-width: 94px;
-          color: #458EC5;
-          border: 1px solid #458EC5;
-          background: #F4F8FB;
-
-       }
-     }  
-    .passtextbox {
-      width: 100%;  
+      justify-content: space-around;
+      .changebtn {
+        font-size: 15px;
+        font-weight: 400;
+        position: relative;
+        left: 200px;
+        bottom: 49px;
+        border-radius: 0px;
+        padding: 3px 8px;
+        min-width: 94px;
+        color: #458ec5;
+        border: 1px solid #458ec5;
+        background: #f4f8fb;
+      }
     }
-    label + div::before, label + div::after{
+    .passtextbox {
+      width: 100%;
+    }
+    label + div::before,
+    label + div::after {
       display: none;
-    } 
-    label{
+    }
+    label {
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
-      color: #434F56;
+      color: #434f56;
       padding-bottom: 8px;
       display: block;
     }
     input {
       height: 48px;
-      border: 1px solid #9BB0BE;
+      border: 1px solid #9bb0be;
       box-sizing: border-box;
       border-radius: 4px;
       background-color: transparent;
       padding-left: 14px;
-          background: #fff;
-    } 
-    input + fieldset{
+      background: #fff;
+    }
+    input + fieldset {
       border: none;
     }
-    .errors{
+    .errors {
       color: red;
       padding-top: 10px;
       display: table;
     }
-    .btneyes{
+    .btneyes {
       position: absolute;
       right: 13px;
     }
-  } 
+  }
 
-  .centerflex{
+  .centerflex {
     display: flex;
     align-items: center;
   }
-
 }

@@ -429,31 +429,31 @@
   }
 }
 
-
-.ImageMobile{
+.ImageMobile {
   display: none;
   @media (max-width: 1024px) {
     display: block;
   }
-  .fulleimg{
+  .fulleimg {
     width: 100%;
-    div, img {
+    div,
+    img {
       width: 100%;
     }
   }
 }
-.ImageDesktop{
+.ImageDesktop {
   display: block;
-  width: 100%; 
+  width: 100%;
   @media (max-width: 1024px) {
     display: none;
   }
-  .fulleimg{
+  .fulleimg {
     width: 100%;
     text-align: center;
-    div, img {
+    div,
+    img {
       width: 100%;
     }
   }
 }
-

@@ -82,7 +82,7 @@
   min-height: 300px;
   z-index: -1;
 
-  &>video {
+  & > video {
     top: 0;
     left: 0;
     object-fit: cover;
@@ -95,7 +95,6 @@
 }
 
 @media (min-width: 1025px) {
-
   .wrapper,
   .blur {
     //background-image: url('/images/banner/banner-placeholder1920-kraken.jpeg');
@@ -109,7 +108,7 @@
   }
 
   .videoWrapper {
-    &>video {
+    & > video {
       top: 0;
       left: 0;
       object-fit: cover;
@@ -270,7 +269,6 @@
 }
 
 @media (min-width: 769px) {
-
   .lazyImageTablet,
   .lazyImageMobile {
     display: none;
@@ -278,14 +276,13 @@
 }
 
 @media (max-height: 751px) and (min-width: 1025px) {
-
   .videoWrapper,
   .content,
   .wrapper,
   .blur {
     max-height: 600px;
 
-    &>video {
+    & > video {
       height: 600px;
     }
   }
@@ -298,14 +295,13 @@
 }
 
 @media (max-height: 751px) and (max-width: 1024px) and (min-width: 768px) {
-
   .videoWrapper,
   .content,
   .wrapper,
   .blur {
     max-height: 432px;
 
-    &>video {
+    & > video {
       height: 432px;
     }
   }
@@ -314,11 +310,6 @@
     padding: 70px 0 100px;
   }
 }
-
-
-
-
-
 
 .getStartedBtnText {
   font-family: 'Inter';
@@ -330,9 +321,7 @@
   align-items: center;
   text-align: center;
 
-  color: #F6F7F9;
-
-
+  color: #f6f7f9;
 }
 
 .getStartedBtnArrow {
@@ -355,8 +344,7 @@
   font-size: 16px;
   line-height: 19px;
 
-  color: #8A929A;
-
+  color: #8a929a;
 
   outline: none;
   outline-style: none;
@@ -375,7 +363,7 @@
 }
 
 button.getStartedBtn {
-  position: relative; 
+  position: relative;
   height: 48px !important;
   left: -3px !important;
   top: -2px !important;
@@ -383,10 +371,10 @@ button.getStartedBtn {
   box-shadow: '2px 5px 5px rgba(0, 0, 0, 0.05)';
   border-radius: 0 4px 4px 0 !important;
   border-color: '#FE7A39';
-  border-left-width: 0; 
+  border-left-width: 0;
   width: 161px !important;
 
-  @media (max-width: 768px) { 
+  @media (max-width: 768px) {
     width: 130px !important;
     font-size: 13px !important;
     padding: 8px 0 8px 8px !important;

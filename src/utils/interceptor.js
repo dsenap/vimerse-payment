@@ -1,6 +1,4 @@
-
 import axios from 'axios';
-
 
 export const addJWTInterceptor = async (token) => {
   axios.interceptors.request.use(
@@ -9,9 +7,7 @@ export const addJWTInterceptor = async (token) => {
 
       return config;
     },
-    (error) => {
-      return Promise.reject(error);
-    }
+    (error) => Promise.reject(error)
   );
 };
 

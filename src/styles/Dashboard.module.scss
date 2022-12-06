@@ -25,7 +25,7 @@
   width: 100%;
   padding: 0 5% !important;
   height: 166px;
-  background: #FFFFFF;
+  background: #ffffff;
   // margin-bottom: 50px;
 }
 
@@ -33,7 +33,7 @@
   width: 100%;
   // padding: 0 5% !important;
   height: 285px;
-  background: #FFFFFF;
+  background: #ffffff;
   margin-bottom: 100px !important;
 
   display: flex;
@@ -44,18 +44,15 @@
 
 .columnContent {
   margin: auto;
-  @media only screen
-  and (min-width: 612px) 
- {
-  padding: 0 5% !important;
+  @media only screen and (min-width: 612px) {
+    padding: 0 5% !important;
   }
-  
+
   min-height: 400px;
 }
 
-
 .textOrangeHeader {
-  color: #FE7A3A;
+  color: #fe7a3a;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -65,14 +62,13 @@
 }
 
 .textOrange {
-
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
   line-height: 34px;
   /* identical to box height */
-  color: #FE7A3A;
+  color: #fe7a3a;
 }
 
 .columnContent {
@@ -83,14 +79,13 @@
   margin: 60px auto 0;
 }
 
-
 .dataContainer {
   width: 1360px;
   height: 448px;
   left: 280px;
   top: 578px;
 
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(155, 176, 190, 0.2);
   border-radius: 4px;
 }
@@ -104,7 +99,7 @@
 .itemBadge {
   width: 85px;
   height: 22px;
-  background: #FF7FAB;
+  background: #ff7fab;
   border-radius: 0px 2px 2px 0px;
   text-align: center;
   justify-content: center;
@@ -116,7 +111,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
-   
+
     display: flex;
     align-items: center;
     text-align: center;
@@ -124,7 +119,6 @@
     svg {
       border-radius: 50px;
     }
-
   }
 
   font-family: 'Inter';
@@ -135,7 +129,6 @@
   display: flex;
   align-items: center;
   text-align: center;
-
 }
 
 .columnText {
@@ -148,7 +141,7 @@
   align-items: center;
   text-align: center;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .infoText {
@@ -159,19 +152,16 @@
   line-height: 34px;
   /* identical to box height */
 
-
-  color: #FE7A3A;
+  color: #fe7a3a;
 }
-
 
 .startBtn {
   width: 192px;
   height: 46px;
   border-radius: 84px !important;
-  border: 1px solid #FE7A39 !important;
+  border: 1px solid #fe7a39 !important;
   background: #fff8f5 !important;
   box-sizing: border-box;
-
 
   span {
     font-family: 'Inter';
@@ -185,7 +175,7 @@
     align-items: center;
     text-align: center;
 
-    color: #FE7A39;
+    color: #fe7a39;
   }
 }
 
@@ -211,7 +201,7 @@
 }
 
 .showMoreTextButton {
-  color: #F6A67F;
+  color: #f6a67f;
 
   font-family: 'Inter';
   font-style: normal;
@@ -221,11 +211,10 @@
   display: flex;
   align-items: center;
   white-space: nowrap !important;
-
 }
 
 .showMoreIcon {
-  color: #F6A67F;
+  color: #f6a67f;
 }
 
 .showMoreInfoLabel {
@@ -247,9 +236,6 @@
   }
 }
 
-
-
-
 .assigneeContainer {
   display: inline-flex;
 }
@@ -268,7 +254,7 @@
   z-index: 1 !important;
   margin-left: -20px;
   position: relative;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   border-radius: 30px;
 }
 
@@ -295,16 +281,15 @@
 }
 
 .mgb10 {
-
   margin-bottom: 20px !important;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .columnHorizontal {
     width: 100%;
     padding: 0 5% !important;
     height: 119px;
-    background: #FFFFFF;
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -352,8 +337,6 @@
   .column-content h5 {
     width: 100%;
   }
-
-
 }
 
 .mobileTableText {
@@ -367,16 +350,14 @@
   display: flex;
   align-items: center;
 
-  color: #434F56;
+  color: #434f56;
   margin-left: 13px;
-
 
   max-width: 200px !important;
   text-overflow: ellipsis;
   white-space: nowrap !important;
   display: inline-block !important;
   overflow: hidden;
-
 }
 
 .mobileNameColumn {
@@ -399,7 +380,7 @@
 }
 
 .mobileStatusBox {
-  background: #FF7FAB;
+  background: #ff7fab;
   border-radius: 2px;
   height: 22px;
   width: 8px;
@@ -408,11 +389,8 @@
 
 .collapseIcon {
   color: white;
-  background: #4A6B80;
-
-
+  background: #4a6b80;
 }
-
 
 .tooltipMain {
   background-color: black;
@@ -429,7 +407,7 @@
 }
 
 .tooltipMain::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: 50%;
   right: 100%;
@@ -456,9 +434,7 @@
   text-decoration: none !important;
 }
 .containerStyle {
-
-    width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
-  
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Typography } from '@material-ui/core';
 import { useIntl } from 'react-intl';
+import { useRouter } from 'next/router';
 import styles from './Pricing.module.scss';
 import Button from '../../Form/Button';
 import { TooltipComponentMobile } from '../../TooltipComponent/TooltipComponentMobile';
@@ -13,10 +14,10 @@ import {
   secondCardUl,
   thirdCardUl,
 } from './PricingData';
-import { useRouter } from 'next/router'
+
 const Pricing = ({ setActiveIndex }) => {
   const [isMobile, setIsMobile] = useState(false);
- const router=useRouter()
+  const router = useRouter();
   const { formatMessage } = useIntl();
 
   useEffect(() => {
@@ -38,15 +39,15 @@ const Pricing = ({ setActiveIndex }) => {
   }, []);
 
   const handleClick = (typePackage) => {
-   // document.getElementById('start-creating').scrollIntoView({ behavior: 'smooth' });
+    // document.getElementById('start-creating').scrollIntoView({ behavior: 'smooth' });
     if (typePackage === 'Consultation') {
-      router.push("/bookcall")
+      router.push('/bookcall');
     }
     if (typePackage === 'Gold') {
-      router.push("/signup")
+      router.push('/signup');
     }
     if (typePackage === 'Diamond') {
-      router.push("/signup")
+      router.push('/signup');
     }
   };
 

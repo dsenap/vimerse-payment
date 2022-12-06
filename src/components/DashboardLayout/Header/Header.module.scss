@@ -7,7 +7,7 @@
   width: 100%;
   position: fixed;
   z-index: 400;
-  top:0;
+  top: 0;
   border-bottom: 1px solid #dce9f0;
 }
 
@@ -135,7 +135,7 @@
   .wrapper {
     height: 50px;
 
-    &>div {
+    & > div {
       padding: 0 32px;
     }
   }
@@ -153,7 +153,7 @@
   .wrapper {
     height: 50px;
 
-    &>div {
+    & > div {
       padding: 0 16px;
     }
   }
@@ -163,17 +163,15 @@
   }
 }
 
-
 .signinBtn {
   margin-right: 10px !important;
   height: 34px !important;
   width: 92px !important;
   border-radius: 84px !important;
 
-  border: 1px solid #FE7A39 !important;
+  border: 1px solid #fe7a39 !important;
   box-sizing: border-box;
   min-width: 0 !important;
-
 
   span {
     font-family: 'Inter';
@@ -187,16 +185,15 @@
     align-items: center;
     text-align: center;
 
-    color: #FE7A39;
+    color: #fe7a39;
   }
-
 }
 
 .signupBtn {
   height: 34px !important;
   width: 92px !important;
   border-radius: 84px !important;
-  background: #FE7A39;
+  background: #fe7a39;
   min-width: 0 !important;
 
   span {
@@ -211,6 +208,6 @@
     align-items: center;
     text-align: center;
 
-    color: #F6F7F9;
+    color: #f6f7f9;
   }
 }

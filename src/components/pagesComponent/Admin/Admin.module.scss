@@ -4,12 +4,11 @@
   align-items: center;
   text-align: center;
 }
-.mainadmin{ 
-  padding: 40px 0; 
-  .mbnone{
-    @media (max-width:1024px){
+.mainadmin {
+  padding: 40px 0;
+  .mbnone {
+    @media (max-width: 1024px) {
       display: none;
     }
   }
-
 }

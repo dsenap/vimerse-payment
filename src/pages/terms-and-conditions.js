@@ -2,11 +2,12 @@ import React from 'react';
 import { Container, Link as MaterialLink, Typography } from '@material-ui/core';
 import { useIntl } from 'react-intl';
 import LazyLoad from 'react-lazyload';
+import withOutAuth from 'src/HOC/withOutAuth';
 import s from '../styles/Terms.module.scss';
 import SocialHead from '../components/SocialHead';
 import useScrollToTop from '../hooks/useScrollToTop';
 import { LIGHT_HOUSE } from '../utils/regulars';
-import withOutAuth from 'src/HOC/withOutAuth';
+
 const TermsAndConditions = ({ gps }) => {
   useScrollToTop();
 
